@@ -1,0 +1,33 @@
+@font-face {
+	font-family: WerkBold;
+	src: url("~/assets/fonts/WerkNeue-Bold.woff");
+}
+@font-face {
+	font-family: WerkExtraBold;
+	src: url("~/assets/fonts/WerkNeue-ExtraBold.woff");
+}
+@font-face {
+	font-family: WerkHeavy;
+	src: url("~/assets/fonts/WerkNeue-Heavy.woff");
+}
+@font-face {
+	font-family: WerkLight;
+	src: url("~/assets/fonts/WerkNeue-Light.woff");
+}
+@font-face {
+	font-family: WerkMedium;
+	src: url("~/assets/fonts/WerkNeue-Medium.woff");
+}
+@font-face {
+	font-family: Werk;
+	src: url("~/assets/fonts/WerkNeue-Regular.woff");
+}
+h6 {
+  font-family: WerkHeavy;
+  font-size: 4vw;
+  text-align: center;
+	margin-block: auto;
+	margin-inline: auto;
+	// border: solid black 0.4vw;
+	// border-radius: 50%;
+}
