@@ -1,1 +1,3 @@
-# niklausiffch
+# niklausiff.ch
+
+copyleft
