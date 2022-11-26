@@ -17,4 +17,5 @@ export default defineNuxtConfig({
     apiPrefix: 'content-api',
   },
   target: 'static',
+  ssr: true,
 })
