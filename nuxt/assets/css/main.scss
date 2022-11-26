@@ -22,12 +22,126 @@
 	font-family: Werk;
 	src: url("~/assets/fonts/WerkNeue-Regular.woff");
 }
-h6 {
+@font-face {
+	font-family: Plex;
+	src: url("~/assets/fonts/IBMPlexMono-Regular.ttf");
+}
+@font-face {
+	font-family: PlexLight;
+	src: url("~/assets/fonts/IBMPlexMono-Light.ttf");
+}
+@font-face {
+	font-family: PlexMedium;
+	src: url("~/assets/fonts/IBMPlexMono-Medium.ttf");
+}
+p {
+	font-family: PlexLight;
+  font-size: 1.5vw;
+	font-weight: bold;
+}
+a {
+	font-family: PlexLight;
+  font-size: 1.5vw;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	&:hover {
+		cursor: pointer;
+		font-style: italic;
+	}
+}
+h3 {
+	a {
+		font-family: PlexLight;
+		font-size: 1.5vw;
+		font-style: italic;
+		font-weight: bold;
+		color: black;
+		&:hover {
+			cursor: text;
+		}
+	}
+	font-family: PlexLight;
+  font-size: 1.5vw;
+	font-style: italic;
+	font-weight: bold;
+}
+h4 {
+	a {
+		font-family: WerkLight;
+		font-size: 2.5vw;
+		margin: 0;
+		color: black;
+		font-style: normal;
+		overflow: visible;
+		white-space: normal;
+		text-overflow: initial;
+		&:hover {
+			cursor: pointer;
+			color: rgb(0,255,0);
+			font-style: normal;
+		}
+	}
+	font-family: WerkLight;
+  font-size: 2.5vw;
+	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	&:hover {
+		cursor: pointer;
+		color: rgb(0,255,0);
+	}
+}
+h5 {
   font-family: WerkHeavy;
-  font-size: 4vw;
+  font-size: 35vw;
   text-align: center;
 	margin-block: auto;
 	margin-inline: auto;
-	// border: solid black 0.4vw;
-	// border-radius: 50%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+h6 {
+  font-family: WerkHeavy;
+  font-size: 10vw;
+  text-align: center;
+	margin-block: auto;
+	margin-inline: auto;
+	color: rgb(0,255,0);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.work-links {
+	color: blue;
+}
+@media (max-width: 600px) {
+	p {
+		font-size: 1.5vw;
+	}
+	a {
+		font-size: 3vw;
+	}
+	h3 {
+		font-size: 1.5vw;
+		a {
+			font-size: 1.5vw;
+		}
+	}
+	h4 {
+		font-size: 4vw;
+		a {
+			font-size: 4vw;
+		}
+	}
+	h5 {
+		font-size: 35vw;
+	}
+	h6 {
+		font-size: 15vw;
+	}
+}
+@media (min-width: 600px) and (max-width: 1200px) {
 }
