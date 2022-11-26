@@ -13,4 +13,5 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
   ],
+  target: 'static',
 })
