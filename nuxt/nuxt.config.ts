@@ -13,5 +13,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
   ],
+  content: {
+    apiPrefix: 'content-api',
+  },
   target: 'static',
 })
