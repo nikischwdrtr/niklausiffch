@@ -1,8 +1,4 @@
 export default defineNuxtConfig({
-  ssr: false,
-    nitro: {
-      preset: 'service-worker'
-  },
   app: {
     head: {
       title: 'niklaus iff',
