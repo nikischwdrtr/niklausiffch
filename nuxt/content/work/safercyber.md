@@ -15,7 +15,7 @@ title: 'niklaus iff'
 <div class="work-col2">
 <div class="work-img">
 
-![](/images/safercyber.png)
+![](/images/safercyber.jpg)
 
 </div>
 </div>

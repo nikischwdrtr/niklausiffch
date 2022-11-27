@@ -35,7 +35,7 @@ title: 'niklaus iff'
 </div>
 <div class="work-img">
 
-![](/images/untitled.png)
+![](/images/untitled.jpg)
 
 </div>
 </div>

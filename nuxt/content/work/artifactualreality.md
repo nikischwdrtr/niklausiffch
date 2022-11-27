@@ -14,8 +14,8 @@ title: 'niklaus iff'
 <div class="work-col2-3">
 <div class="work-col2">
 
-<div class="work-ifr">
 <div class="work-img">
+<div class="work-ifr">
 <iframe src="https://player.vimeo.com/video/666509300?h=92b99cf6732&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="dauer standort render"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
 </div>
 </div>
@@ -27,7 +27,7 @@ title: 'niklaus iff'
 </div>
 <div class="work-img">
 
-![](/images/IMG_1036.jpeg)
+![](/images/IMG_1036.jpg)
 
 </div>
 <div class="work-img">

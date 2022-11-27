@@ -14,20 +14,20 @@ title: 'niklaus iff'
 <div class="work-col2-3">
 <div class="work-col2">
 
-<div class="work-ifr">
 <div class="work-img">
+<div class="work-ifr">
 <iframe src="https://player.vimeo.com/video/666287068?h=669be21527&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="dauer standort render"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
 </div>
 </div>
 
 <div class="work-img">
 
-![](/images/indexnotfound01.png)
+![](/images/indexnotfound01.jpg)
 
 </div>
 <div class="work-img">
 
-![](/images/indexnotfound03.png)
+![](/images/indexnotfound03.jpg)
 
 </div>
 </div>

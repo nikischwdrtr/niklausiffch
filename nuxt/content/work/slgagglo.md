@@ -15,12 +15,12 @@ title: 'niklaus iff'
 <div class="work-col2">
 <div class="work-img">
 
-![](/images/slg01.jpg)
+![](/images/slg02.jpg)
 
 </div>
 <div class="work-img">
 
-![](/images/slg02.png)
+![](/images/slg01.jpg)
 
 </div>
 </div>

@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
   ],
   content: {
-    apiPrefix: 'content-api',
+    base: 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main'
   },
   target: 'static',
   ssr: true,
