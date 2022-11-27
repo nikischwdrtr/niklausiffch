@@ -14,21 +14,37 @@ title: 'niklaus iff'
 <div class="work-col2-3">
 <div class="work-col2">
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/666509300?h=92b99cf673" width="640" height="395" frameborder="0" allowfullscreen></iframe>
+<div class="work-ifr">
+<div class="work-img">
+<iframe src="https://player.vimeo.com/video/666509300?h=92b99cf6732&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="dauer standort render"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+</div>
+
+<div class="work-img">
 
 ![](/images/ar01.jpg)
 
+</div>
+<div class="work-img">
+
 ![](/images/IMG_1036.jpeg)
 
+</div>
+<div class="work-img">
+
 ![](/images/textured_output17.jpg)
+
+</div>
+<div class="work-img">
 
 ![](/images/textured_output22.jpg)
 
 </div>
+</div>
 
 <!-- image info -->
 <div class="work-col3">
-<div>
+<div class="work-col3-div">
 
 ### game walkthrough
 
@@ -37,9 +53,7 @@ unity
 2021
 
 </div>
-<div>
-</div>
-<div>
+<div class="work-col3-div">
 
 ### austellungsansicht
 
@@ -48,7 +62,7 @@ video game installation
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### untitled
 
@@ -57,7 +71,7 @@ video game installation
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### textured output 17
 
@@ -66,7 +80,7 @@ video game installation
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### texutred output 22
 

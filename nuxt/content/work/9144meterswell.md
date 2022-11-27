@@ -13,20 +13,33 @@ title: 'niklaus iff'
 <!-- images -->
 <div class="work-col2-3">
 <div class="work-col2">
+<div class="work-img">
 
 ![](/images/9144meterswell02.png)
 
+</div>
+<div class="work-img">
+
 ![](/images/9144meterswell05.png)
+
+</div>
+<div class="work-img">
 
 ![](/images/meterswe.jpeg)
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/772184630?h=27d1a46322" width="640" height="395" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="work-ifr">
+<div class="work-img">
+<iframe src="https://player.vimeo.com/video/772184630?h=27d1a46322&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="dauer standort render"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+</div>
 
 </div>
 
 <!-- image info -->
 <div class="work-col3">
-<div>
+<div class="work-col3-div">
 
 ### untitled
 
@@ -35,7 +48,7 @@ still (group exhibition)
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### untitled
 
@@ -44,7 +57,7 @@ still
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### austellungs ansicht
 
@@ -53,7 +66,7 @@ wipkingen
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### 9144 meters well
 
@@ -61,8 +74,6 @@ video algorithm 1080x1920
 
 2021
 
-</div>
-<div>
 </div>
 </div>
 </div>

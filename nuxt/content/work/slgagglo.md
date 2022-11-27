@@ -13,17 +13,22 @@ title: 'niklaus iff'
 <!-- images -->
 <div class="work-col2-3">
 <div class="work-col2">
-
-![](/images/slg02.png)
+<div class="work-img">
 
 ![](/images/slg01.jpg)
 
+</div>
+<div class="work-img">
+
+![](/images/slg02.png)
+
+</div>
 </div>
 
 <!-- image info -->
 <!-- if video double div -->
 <div class="work-col3">
-<div>
+<div class="work-col3-div">
 
 ### slgAgglo
 
@@ -32,7 +37,7 @@ web livestream test
 wip
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### database
 
@@ -45,7 +50,7 @@ wip
 </div>
 
 <!-- links -->
-<div class="work-col4">
+<div>
 
 <!-- <a class="work-links" href="https://doc.niklausiff.ch/" target="_blank">doc</a> -->
 

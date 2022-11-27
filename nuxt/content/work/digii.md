@@ -13,39 +13,47 @@ title: 'niklaus iff'
 <!-- images -->
 <div class="work-col2-3">
 <div class="work-col2">
-
-![](/images/digii01.jpg)
-
-![](/images/digii02.jpg)
+<div class="work-img">
 
 ![](/images/digii03.jpg)
 
+</div>
+<div class="work-img">
+
+![](/images/digii02.jpg)
+
+</div>
+<div class="work-img">
+
+![](/images/digii01.jpg)
+
+</div>
 </div>
 
 <!-- image info -->
 <!-- if video double div -->
 <div class="work-col3">
-<div>
+<div class="work-col3-div">
 
-### digital identity
-
-thoughts & ideas
-
-wip
-
-</div>
-<div>
-
-### digital identity
+### encrypted data
 
 thoughts & ideas
 
 wip
 
 </div>
-<div>
+<div class="work-col3-div">
 
-### digital identity
+### signal encryption
+
+thoughts & ideas
+
+wip
+
+</div>
+<div class="work-col3-div">
+
+### ipv4 adresses
 
 thoughts & ideas
 

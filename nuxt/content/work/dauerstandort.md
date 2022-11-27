@@ -13,22 +13,36 @@ title: 'niklaus iff'
 <!-- images -->
 <div class="work-col2-3">
 <div class="work-col2">
+<div class="work-img">
 
 ![](/images/ds02.jpg)
 
+</div>
+<div class="work-img">
+
 ![](/images/ds01.jpg)
+
+</div>
+<div class="work-img">
 
 ![](/images/ds04.jpg)
 
+</div>
+<div class="work-img">
+
 ![](/images/ds05.jpg)
+
+</div>
+<div class="work-img">
 
 ![](/images/untitled.png)
 
 </div>
+</div>
 
 <!-- image info -->
 <div class="work-col3">
-<div>
+<div class="work-col3-div">
 
 ### untitled
 
@@ -37,7 +51,7 @@ video scan series
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### untitled
 
@@ -46,7 +60,7 @@ video scan series
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### untitled
 
@@ -55,7 +69,7 @@ video scan series
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### untitled
 
@@ -64,7 +78,7 @@ video scan series
 2021
 
 </div>
-<div>
+<div class="work-col3-div">
 
 ### rendering
 

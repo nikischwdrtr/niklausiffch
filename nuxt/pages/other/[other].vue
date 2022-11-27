@@ -8,8 +8,8 @@
   onMounted(() => {
     let totalWidth = 0
     let newWidth = []
-    let cont = document.getElementsByClassName('work-img')
-    let cont2 = document.getElementsByClassName('work-col3-div')
+    let cont = document.getElementsByClassName('other-img')
+    let cont2 = document.getElementsByClassName('other-col3-div')
     for (let i = 0, len = cont.length; i < len; i++) {
       totalWidth = cont[i].offsetWidth
       newWidth[i] = totalWidth
@@ -19,18 +19,18 @@
 </script>
 
 <template>
-  <div class="work-container">
-    <NIPort />
+  <div class="other-container">
+    <NI />
     <ContentDoc />
     <Footer />
   </div>
 </template>
 
 <style lang="scss">
-.work-container {
+.other-container {
   overflow: hidden;
 }
-.work-col1 {
+.other-col1 {
   top: 0;
   left: 0;
   width: 98%;
@@ -39,12 +39,12 @@
   grid-template-columns: 7% 93%;
   z-index: 10;
 }
-.work-col2-3 {
+.other-col2-3 {
   position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
 }
-.work-col2 {
+.other-col2 {
   position: relative;
   display: flex;
   top: 3vh;
@@ -57,7 +57,7 @@
     max-height: 90vh;
   }
 }
-.work-ifr {
+.other-ifr {
   display: flex;
   position: relative;
   padding:56.25% 0 0 0;
@@ -70,7 +70,7 @@
     height: 100%;
   }
 }
-.work-col3 {
+.other-col3 {
   position: relative;
   display: inline-flex;
   margin-top: -2%;
@@ -83,21 +83,21 @@
     width: 50vw;
   }
 }
-.work-col4 {
+.other-col4 {
   margin-top: -1%;
   line-height: 20%;
   width: 100%;
 }
 @media (max-width: 600px) {
-  .work-col1 {
+  .other-col1 {
     grid-template-columns: 10% 80%;
   }
-  .work-col2 {
+  .other-col2 {
     img {
       width: 100vw;
     }
   }
-  .work-col3 {
+  .other-col3 {
     margin-bottom: 5%;
     div {
       width: 100vw;
