@@ -11,6 +11,7 @@ title: 'niklaus iff'
 </div>
 
 <!-- images -->
+<div class="work-col2-3">
 <div class="work-col2">
 
 ![](/images/)
@@ -20,6 +21,7 @@ title: 'niklaus iff'
 </div>
 
 <!-- image info -->
+<!-- if video double div -->
 <div class="work-col3">
 <div>
 
@@ -29,6 +31,7 @@ title: 'niklaus iff'
 
 ...
 
+</div>
 </div>
 </div>
 

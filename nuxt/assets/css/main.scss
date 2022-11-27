@@ -45,6 +45,9 @@ a {
 	text-decoration: none;
 	font-weight: bold;
 	color: black;
+	overflow: visible;
+	white-space: normal;
+	text-overflow: initial;
 	&:hover {
 		cursor: pointer;
 		font-style: italic;
@@ -119,15 +122,18 @@ h6 {
 }
 @media (max-width: 600px) {
 	p {
-		font-size: 1.5vw;
+		font-size: 3vw;
 	}
 	a {
 		font-size: 3vw;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 	h3 {
 		font-size: 1.5vw;
 		a {
-			font-size: 1.5vw;
+			font-size: 3vw;
 		}
 	}
 	h4 {

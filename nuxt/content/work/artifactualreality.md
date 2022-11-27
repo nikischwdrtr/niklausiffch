@@ -11,6 +11,7 @@ title: 'niklaus iff'
 </div>
 
 <!-- images -->
+<div class="work-col2-3">
 <div class="work-col2">
 
 ![](/images/IMG_1128.jpeg)
@@ -27,6 +28,7 @@ game installation
 
 2021
 
+</div>
 </div>
 </div>
 

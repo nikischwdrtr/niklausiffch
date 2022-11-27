@@ -11,6 +11,7 @@ title: 'niklaus iff'
 </div>
 
 <!-- images -->
+<div class="work-col2-3">
 <div class="work-col2">
 
 ![](/images/printfinal04.png)
@@ -38,6 +39,7 @@ proposal
 
 2023
 
+</div>
 </div>
 </div>
 

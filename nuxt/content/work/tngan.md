@@ -73,8 +73,6 @@ image exhibition
 
 <!-- <a class="work-links" href="https://doc.niklausiff.ch/" target="_blank">doc</a> -->
 
-<!-- <a class="work-links" href="https://github.com/nikischwdrtr/noindex" target="_blank">github</a> -->
-
 </div>
 
 <!-- text -->

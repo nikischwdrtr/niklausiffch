@@ -67,4 +67,17 @@
   line-height: 20%;
   width: 100%;
 }
+@media (max-width: 600px) {
+  .work-col2 {
+    img {
+      width: 100vw;
+    }
+  }
+  .work-col3 {
+    margin-bottom: 5%;
+    div {
+      width: 100vw;
+    }
+  }
+}
 </style>
