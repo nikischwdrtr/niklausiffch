@@ -4,7 +4,7 @@ title: 'niklaus iff'
 <!-- number//title -->
 <div class="work-col1">
 
-#### 02
+#### 002
 
 #### artifactual reality
 
@@ -14,7 +14,15 @@ title: 'niklaus iff'
 <div class="work-col2-3">
 <div class="work-col2">
 
-![](/images/IMG_1128.jpeg)
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/666509300?h=92b99cf673" width="640" height="395" frameborder="0" allowfullscreen></iframe>
+
+![](/images/ar01.jpg)
+
+![](/images/IMG_1036.jpeg)
+
+![](/images/textured_output17.jpg)
+
+![](/images/textured_output22.jpg)
 
 </div>
 
@@ -22,9 +30,47 @@ title: 'niklaus iff'
 <div class="work-col3">
 <div>
 
-### osc datatransfer screenshot
+### game walkthrough
 
-game installation
+unity
+
+2021
+
+</div>
+<div>
+</div>
+<div>
+
+### austellungsansicht
+
+video game installation
+
+2021
+
+</div>
+<div>
+
+### untitled
+
+video game installation
+
+2021
+
+</div>
+<div>
+
+### textured output 17
+
+3d scan texture
+
+2021
+
+</div>
+<div>
+
+### texutred output 22
+
+3d scan texture
 
 2021
 

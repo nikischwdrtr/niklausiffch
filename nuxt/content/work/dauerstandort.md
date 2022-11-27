@@ -4,7 +4,7 @@ title: 'niklaus iff'
 <!-- number//title -->
 <div class="work-col1">
 
-#### 04
+#### 004
 
 #### dauer standort
 
@@ -14,7 +14,13 @@ title: 'niklaus iff'
 <div class="work-col2-3">
 <div class="work-col2">
 
-![](/images/printfinal04.png)
+![](/images/ds02.jpg)
+
+![](/images/ds01.jpg)
+
+![](/images/ds04.jpg)
+
+![](/images/ds05.jpg)
 
 ![](/images/untitled.png)
 
@@ -26,7 +32,34 @@ title: 'niklaus iff'
 
 ### untitled
 
-video scan
+video scan series
+
+2021
+
+</div>
+<div>
+
+### untitled
+
+video scan series
+
+2021
+
+</div>
+<div>
+
+### untitled
+
+video scan series
+
+2021
+
+</div>
+<div>
+
+### untitled
+
+video scan series
 
 2021
 

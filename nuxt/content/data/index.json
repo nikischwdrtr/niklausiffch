@@ -50,6 +50,14 @@
     },
     {
       "id": "007",
+      "name": "safer cyber",
+      "desc": "workshop",
+      "year": "tba",
+      "link": "/work/safercyber",
+      "href": "0"
+    },
+    {
+      "id": "008",
       "name": "slgAgglo",
       "desc": "?database_",
       "year": "wip",
@@ -57,7 +65,7 @@
       "href": "0"
     },
     {
-      "id": "008",
+      "id": "009",
       "name": "digital identity",
       "desc": "192.168.0.1",
       "year": "wip",
@@ -65,7 +73,7 @@
       "href": "0"
     },
     {
-      "id": "009",
+      "id": "010",
       "name": "poster gen",
       "desc": "online tool",
       "year": "2020",
@@ -73,7 +81,7 @@
       "href": "0"
     },
     {
-      "id": "010",
+      "id": "011",
       "name": "portfolio",
       "desc": "fine artig",
       "year": "updated dez 22",
@@ -81,7 +89,7 @@
       "href": "0"
     },
     {
-      "id": "011",
+      "id": "012",
       "name": "cv",
       "desc": "pls ask",
       "year": "foreva",
@@ -89,7 +97,7 @@
       "href": "0"
     },
     {
-      "id": "012",
+      "id": "013",
       "name": "all inclusive",
       "desc": "tba",
       "year": "2023",
@@ -97,7 +105,7 @@
       "href": "0"
     },
     {
-      "id": "013",
+      "id": "014",
       "name": "error",
       "desc": "404",
       "year": "eva",
@@ -105,7 +113,7 @@
       "href": "0"
     },
     {
-      "id": "014",
+      "id": "015",
       "name": "doc",
       "desc": "prozess dokumentation",
       "year": "2006 - dato",
@@ -113,7 +121,7 @@
       "href": "blank"
     },
     {
-      "id": "015",
+      "id": "016",
       "name": "github",
       "desc": "open source codes to sell",
       "year": "20xx",
@@ -121,7 +129,7 @@
       "href": "blank"
     },
     {
-      "id": "016",
+      "id": "017",
       "name": "shape generator",
       "desc": "p5 sketch",
       "year": "2022",
@@ -129,7 +137,7 @@
       "href": "blank"
     },
     {
-      "id": "017",
+      "id": "018",
       "name": "archive",
       "desc": "curated life",
       "year": "1996 - dato",
@@ -137,7 +145,7 @@
       "href": "0"
     },
     {
-      "id": "018",
+      "id": "019",
       "name": "ssdd album cover",
       "desc": "dms x fxkxghxst",
       "year": "2021",
@@ -145,7 +153,7 @@
       "href": "blank"
     },
     {
-      "id": "019",
+      "id": "020",
       "name": "büsi",
       "desc": "p5 sketch",
       "year": "2020 i guess",
@@ -153,7 +161,7 @@
       "href": "blank"
     },
     {
-      "id": "020",
+      "id": "021",
       "name": "1402",
       "desc": "instrumental",
       "year": "~2018",
@@ -161,7 +169,7 @@
       "href": "blank"
     },
     {
-      "id": "021",
+      "id": "022",
       "name": "the meaning of life",
       "desc": "mutliplayer browser game",
       "year": "2021",
@@ -169,7 +177,7 @@
       "href": "blank"
     },
     {
-      "id": "022",
+      "id": "023",
       "name": "gigax rating",
       "desc": "no zhdk fine arts",
       "year": "2022 BA",
@@ -177,7 +185,7 @@
       "href": "0"
     },
     {
-      "id": "023",
+      "id": "024",
       "name": "surveillance",
       "desc": "zine",
       "year": "2020",
@@ -185,7 +193,7 @@
       "href": "0"
     },
     {
-      "id": "024",
+      "id": "025",
       "name": "steinbruch",
       "desc": "fictional band",
       "year": "rip due covid",
@@ -193,7 +201,7 @@
       "href": "0"
     },
     {
-      "id": "025",
+      "id": "026",
       "name": "contact",
       "desc": "admin@niklausiff.ch",
       "year": "foreva",
@@ -201,7 +209,7 @@
       "href": "mail"
     },
     {
-      "id": "026",
+      "id": "027",
       "name": "bappe cover",
       "desc": "strohpapi tape",
       "year": "2022 :/",
@@ -209,7 +217,7 @@
       "href": "blank"
     },
     {
-      "id": "027",
+      "id": "028",
       "name": "internet manifesto",
       "desc": "cyberspace independence john barlow",
       "year": "1996 davos",
@@ -217,62 +225,13 @@
       "href": "blank"
     },
     {
-      "id": "028",
+      "id": "029",
       "name": "everrythang foo freee",
       "desc": "100%%% safeee vpn",
       "year": "???___",
       "link": "https://thepiratebay.org/index.html",
       "href": "blank"
-    },
-    {
-      "id": "010",
-      "name": "portfolio",
-      "desc": "portfolio",
-      "year": "updated dez 22",
-      "link": "/portfolio",
-      "href": "0"
-    },
-    {
-      "id": "010",
-      "name": "portfolio",
-      "desc": "portfolio",
-      "year": "updated dez 22",
-      "link": "/portfolio",
-      "href": "0"
-    },
-    {
-      "id": "010",
-      "name": "portfolio",
-      "desc": "portfolio",
-      "year": "updated dez 22",
-      "link": "/portfolio",
-      "href": "0"
-    },
-    {
-      "id": "010",
-      "name": "portfolio",
-      "desc": "portfolio",
-      "year": "updated dez 22",
-      "link": "/portfolio",
-      "href": "0"
-    },
-    {
-      "id": "010",
-      "name": "portfolio",
-      "desc": "portfolio",
-      "year": "updated dez 22",
-      "link": "/portfolio",
-      "href": "0"
-    },
-    {
-      "id": "010",
-      "name": "portfolio",
-      "desc": "portfolio",
-      "year": "updated dez 22",
-      "link": "/portfolio",
-      "href": "0"
-    },
-    {
+    },{
       "id": "001",
       "name": "tnGAN",
       "desc": "exh",
@@ -322,6 +281,14 @@
     },
     {
       "id": "007",
+      "name": "safer cyber",
+      "desc": "workshop",
+      "year": "tba",
+      "link": "/work/safercyber",
+      "href": "0"
+    },
+    {
+      "id": "008",
       "name": "slgAgglo",
       "desc": "?database_",
       "year": "wip",
@@ -329,7 +296,7 @@
       "href": "0"
     },
     {
-      "id": "008",
+      "id": "009",
       "name": "digital identity",
       "desc": "192.168.0.1",
       "year": "wip",
@@ -337,7 +304,7 @@
       "href": "0"
     },
     {
-      "id": "009",
+      "id": "010",
       "name": "poster gen",
       "desc": "online tool",
       "year": "2020",
@@ -345,7 +312,7 @@
       "href": "0"
     },
     {
-      "id": "010",
+      "id": "011",
       "name": "portfolio",
       "desc": "fine artig",
       "year": "updated dez 22",
@@ -353,7 +320,7 @@
       "href": "0"
     },
     {
-      "id": "011",
+      "id": "012",
       "name": "cv",
       "desc": "pls ask",
       "year": "foreva",
@@ -361,7 +328,7 @@
       "href": "0"
     },
     {
-      "id": "012",
+      "id": "013",
       "name": "all inclusive",
       "desc": "tba",
       "year": "2023",
@@ -369,7 +336,7 @@
       "href": "0"
     },
     {
-      "id": "013",
+      "id": "014",
       "name": "error",
       "desc": "404",
       "year": "eva",
@@ -377,7 +344,7 @@
       "href": "0"
     },
     {
-      "id": "014",
+      "id": "015",
       "name": "doc",
       "desc": "prozess dokumentation",
       "year": "2006 - dato",
@@ -385,7 +352,7 @@
       "href": "blank"
     },
     {
-      "id": "015",
+      "id": "016",
       "name": "github",
       "desc": "open source codes to sell",
       "year": "20xx",
@@ -393,7 +360,7 @@
       "href": "blank"
     },
     {
-      "id": "016",
+      "id": "017",
       "name": "shape generator",
       "desc": "p5 sketch",
       "year": "2022",
@@ -401,7 +368,7 @@
       "href": "blank"
     },
     {
-      "id": "017",
+      "id": "018",
       "name": "archive",
       "desc": "curated life",
       "year": "1996 - dato",
@@ -409,7 +376,7 @@
       "href": "0"
     },
     {
-      "id": "018",
+      "id": "019",
       "name": "ssdd album cover",
       "desc": "dms x fxkxghxst",
       "year": "2021",
@@ -417,7 +384,7 @@
       "href": "blank"
     },
     {
-      "id": "019",
+      "id": "020",
       "name": "büsi",
       "desc": "p5 sketch",
       "year": "2020 i guess",
@@ -425,7 +392,7 @@
       "href": "blank"
     },
     {
-      "id": "020",
+      "id": "021",
       "name": "1402",
       "desc": "instrumental",
       "year": "~2018",
@@ -433,7 +400,7 @@
       "href": "blank"
     },
     {
-      "id": "021",
+      "id": "022",
       "name": "the meaning of life",
       "desc": "mutliplayer browser game",
       "year": "2021",
@@ -441,7 +408,7 @@
       "href": "blank"
     },
     {
-      "id": "022",
+      "id": "023",
       "name": "gigax rating",
       "desc": "no zhdk fine arts",
       "year": "2022 BA",
@@ -449,7 +416,7 @@
       "href": "0"
     },
     {
-      "id": "023",
+      "id": "024",
       "name": "surveillance",
       "desc": "zine",
       "year": "2020",
@@ -457,7 +424,7 @@
       "href": "0"
     },
     {
-      "id": "024",
+      "id": "025",
       "name": "steinbruch",
       "desc": "fictional band",
       "year": "rip due covid",
@@ -465,7 +432,7 @@
       "href": "0"
     },
     {
-      "id": "025",
+      "id": "026",
       "name": "contact",
       "desc": "admin@niklausiff.ch",
       "year": "foreva",
@@ -473,7 +440,7 @@
       "href": "mail"
     },
     {
-      "id": "026",
+      "id": "027",
       "name": "bappe cover",
       "desc": "strohpapi tape",
       "year": "2022 :/",
@@ -481,7 +448,7 @@
       "href": "blank"
     },
     {
-      "id": "027",
+      "id": "028",
       "name": "internet manifesto",
       "desc": "cyberspace independence john barlow",
       "year": "1996 davos",
@@ -489,7 +456,7 @@
       "href": "blank"
     },
     {
-      "id": "028",
+      "id": "029",
       "name": "everrythang foo freee",
       "desc": "100%%% safeee vpn",
       "year": "???___",
@@ -546,6 +513,14 @@
     },
     {
       "id": "007",
+      "name": "safer cyber",
+      "desc": "workshop",
+      "year": "tba",
+      "link": "/work/safercyber",
+      "href": "0"
+    },
+    {
+      "id": "008",
       "name": "slgAgglo",
       "desc": "?database_",
       "year": "wip",
@@ -553,7 +528,7 @@
       "href": "0"
     },
     {
-      "id": "008",
+      "id": "009",
       "name": "digital identity",
       "desc": "192.168.0.1",
       "year": "wip",
@@ -561,7 +536,7 @@
       "href": "0"
     },
     {
-      "id": "009",
+      "id": "010",
       "name": "poster gen",
       "desc": "online tool",
       "year": "2020",
@@ -569,7 +544,7 @@
       "href": "0"
     },
     {
-      "id": "010",
+      "id": "011",
       "name": "portfolio",
       "desc": "fine artig",
       "year": "updated dez 22",
@@ -577,7 +552,7 @@
       "href": "0"
     },
     {
-      "id": "011",
+      "id": "012",
       "name": "cv",
       "desc": "pls ask",
       "year": "foreva",
@@ -585,7 +560,7 @@
       "href": "0"
     },
     {
-      "id": "012",
+      "id": "013",
       "name": "all inclusive",
       "desc": "tba",
       "year": "2023",
@@ -593,7 +568,7 @@
       "href": "0"
     },
     {
-      "id": "013",
+      "id": "014",
       "name": "error",
       "desc": "404",
       "year": "eva",
@@ -601,7 +576,7 @@
       "href": "0"
     },
     {
-      "id": "014",
+      "id": "015",
       "name": "doc",
       "desc": "prozess dokumentation",
       "year": "2006 - dato",
@@ -609,7 +584,7 @@
       "href": "blank"
     },
     {
-      "id": "015",
+      "id": "016",
       "name": "github",
       "desc": "open source codes to sell",
       "year": "20xx",
@@ -617,7 +592,7 @@
       "href": "blank"
     },
     {
-      "id": "016",
+      "id": "017",
       "name": "shape generator",
       "desc": "p5 sketch",
       "year": "2022",
@@ -625,7 +600,7 @@
       "href": "blank"
     },
     {
-      "id": "017",
+      "id": "018",
       "name": "archive",
       "desc": "curated life",
       "year": "1996 - dato",
@@ -633,7 +608,7 @@
       "href": "0"
     },
     {
-      "id": "018",
+      "id": "019",
       "name": "ssdd album cover",
       "desc": "dms x fxkxghxst",
       "year": "2021",
@@ -641,7 +616,7 @@
       "href": "blank"
     },
     {
-      "id": "019",
+      "id": "020",
       "name": "büsi",
       "desc": "p5 sketch",
       "year": "2020 i guess",
@@ -649,7 +624,7 @@
       "href": "blank"
     },
     {
-      "id": "020",
+      "id": "021",
       "name": "1402",
       "desc": "instrumental",
       "year": "~2018",
@@ -657,7 +632,7 @@
       "href": "blank"
     },
     {
-      "id": "021",
+      "id": "022",
       "name": "the meaning of life",
       "desc": "mutliplayer browser game",
       "year": "2021",
@@ -665,7 +640,7 @@
       "href": "blank"
     },
     {
-      "id": "022",
+      "id": "023",
       "name": "gigax rating",
       "desc": "no zhdk fine arts",
       "year": "2022 BA",
@@ -673,7 +648,7 @@
       "href": "0"
     },
     {
-      "id": "023",
+      "id": "024",
       "name": "surveillance",
       "desc": "zine",
       "year": "2020",
@@ -681,7 +656,7 @@
       "href": "0"
     },
     {
-      "id": "024",
+      "id": "025",
       "name": "steinbruch",
       "desc": "fictional band",
       "year": "rip due covid",
@@ -689,7 +664,7 @@
       "href": "0"
     },
     {
-      "id": "025",
+      "id": "026",
       "name": "contact",
       "desc": "admin@niklausiff.ch",
       "year": "foreva",
@@ -697,7 +672,7 @@
       "href": "mail"
     },
     {
-      "id": "026",
+      "id": "027",
       "name": "bappe cover",
       "desc": "strohpapi tape",
       "year": "2022 :/",
@@ -705,7 +680,7 @@
       "href": "blank"
     },
     {
-      "id": "027",
+      "id": "028",
       "name": "internet manifesto",
       "desc": "cyberspace independence john barlow",
       "year": "1996 davos",
@@ -713,7 +688,7 @@
       "href": "blank"
     },
     {
-      "id": "028",
+      "id": "029",
       "name": "everrythang foo freee",
       "desc": "100%%% safeee vpn",
       "year": "???___",

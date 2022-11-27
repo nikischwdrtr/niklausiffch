@@ -6,7 +6,7 @@
 
 <template>
   <div class="work-container">
-    <NI />
+    <NIPort />
     <ContentDoc />
     <Footer />
   </div>

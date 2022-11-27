@@ -44,13 +44,20 @@
     },
     {
       "id": "007",
+      "name": "safer cyber",
+      "desc": "workshop",
+      "year": "tba",
+      "link": "/work/safercyber"
+    },
+    {
+      "id": "008",
       "name": "slgAgglo",
       "desc": "?database_",
       "year": "wip",
       "link": "/work/slgagglo"
     },
     {
-      "id": "008",
+      "id": "009",
       "name": "digital identity",
       "desc": "192.168.0.1",
       "year": "wip",
