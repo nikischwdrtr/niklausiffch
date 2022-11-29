@@ -30,12 +30,16 @@
   const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/data/portfolio.json')
   const index = JSON.parse(indexP.value)
   function goToLink(link,href) {
-    if (href == 'blank') {
-      window.open(link, '_blank', 'noreferrer')
-    } else if (href == 'mail') {
-      window.location.href = "mailto:admin@niklausiff.ch";
+    if (link == 'false') {
+      void(0)
     } else {
-      window.location.href = link
+      if (href == 'blank') {
+        window.open(link, '_blank', 'noreferrer')
+      } else if (href == 'mail') {
+        window.location.href = "mailto:admin@niklausiff.ch";
+      } else {
+        window.location.href = link
+      }
     }
   }
 </script>

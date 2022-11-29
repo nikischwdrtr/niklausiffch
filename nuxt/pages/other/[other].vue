@@ -24,7 +24,7 @@
 
 <template>
   <div class="other-container">
-    <NIPort />
+    <NI />
       <div class="other-col1">
         <h4 class="other-newh4">{{index.num}}</h4>
         <h4 class="other-newh4">{{index.name}}</h4>
