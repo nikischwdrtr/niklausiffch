@@ -21,7 +21,7 @@
       totalWidth = cont[i].offsetWidth
       newWidth[i] = totalWidth
       console.log(totalWidth)
-      cont2[i].style.width = newWidth[i]+'px'
+      cont2[i].style.width = totalWidth+'px'
     }
   })
 </script>
