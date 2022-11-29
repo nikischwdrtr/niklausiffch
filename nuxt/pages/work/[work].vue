@@ -10,6 +10,7 @@
   const {data: indexP } = await useFetch(pathToJSON)
   const index = JSON.parse(indexP.value)
   onMounted(() => {
+    console.log('dini')
     let totalWidth = 0
     let newWidth = []
     let cont = document.getElementsByClassName('work-img')
@@ -19,6 +20,7 @@
       newWidth[i] = totalWidth
       cont2[i].style.width = newWidth[i]+'px'
     }
+    console.log('fetti muetter')
   })
 </script>
 
@@ -146,7 +148,8 @@ h3 {
   }
   .work-col2 {
     img {
-      width: 100vw;
+      width: 98vw;
+      max-height: 70vh;
     }
   }
   .work-col3 {
