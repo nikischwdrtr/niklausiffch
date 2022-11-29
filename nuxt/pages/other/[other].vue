@@ -152,7 +152,8 @@ h3 {
   .other-col3 {
     margin-bottom: 5%;
     div {
-      width: 100vw;
+      width: 98vw;
+      max-height: 70vh;
     }
   }
   h3 {

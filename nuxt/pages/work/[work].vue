@@ -14,14 +14,13 @@
     let totalWidth = 0
     let newWidth = []
     let cont = document.getElementsByClassName('work-img')
-    console.log('cont',cont)
     let cont2 = document.getElementsByClassName('work-col3-div')
-    console.log('cont2',cont2)
     for (let i = 0, len = cont.length; i < len; i++) {
       totalWidth = cont[i].offsetWidth
       newWidth[i] = totalWidth
-      console.log(totalWidth)
-      cont2[i].style.width = totalWidth+'px'
+      console.log(cont2[i].style.width)
+      cont2[i].style.width = newWidth[i]+'px'
+      console.log(cont2[i].style.width)
     }
   })
 </script>
