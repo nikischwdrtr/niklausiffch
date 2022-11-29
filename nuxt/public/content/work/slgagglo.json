@@ -1,0 +1,31 @@
+{
+  "num": "008",
+  "name": "slgAgglo",
+  "images": [
+    {
+      "ifr": "0",
+      "link": "/images/slg02.jpg"
+    },
+    {
+      "ifr": "0",
+      "link": "/images/slg01.jpg"
+    }
+  ],
+  "info": [
+    {
+      "t": "slgAgglo",
+      "d": "web livestream test",
+      "de": "wip"
+    },
+    {
+      "t": "database",
+      "d": "flussdiagramm cam",
+      "de": "wip"
+    },
+  ],
+  "link": "false",
+  "links": [
+    {}
+  ],
+  "txt": "Der «Stadt-Land-Graben» wird immer mehr zu einem Thema. Fragen über die Existenz und den politischen Einfluss sind umstritten. Er beschreibt ein Dazwischen, welches für mich, da ich selbst im Agglo aufgewachsen bin, Spannung erzeugt. Für mich ist der «Stadt-Land-Graben» ganz klar das Agglo und schon lange wollte ich jenes genauer untersuchen. Die Idee wäre sehr konzeptuell und systematisch vorzugehen. Eine Datenbank zu erstellen aus Daten vom Bund/Kanton, Forschungen und eigenen Erkenntnissen. Ausserdem das Ganze mit Bild und Video Material zu bespielen. Was bedeutet selbst in die Agglos zu gehen. In einem späteren Verlauf kann aus der Datenbank ein visueller Output entstehen. Anhand von einem Algorithmus können zum Beispiel Video und Bild mit Sound kombiniert werden, welche gesteuert wird von den gesammelten Daten. Hier gibt es jedoch noch keine konkrete Idee. Viel mehr sollte der Prozess aufzeigen, wie die Arbeit in einem visuellen Kontext aussehen sollte."
+}

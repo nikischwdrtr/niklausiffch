@@ -10,12 +10,6 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/main.scss',
   ],
-  modules: [
-    '@nuxt/content',
-  ],
-  content: {
-    base: 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main'
-  },
   target: 'static',
   ssr: true,
 })

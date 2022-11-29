@@ -1,0 +1,22 @@
+{
+  "num": "007",
+  "name": "safer cyber",
+  "images": [
+    {
+      "ifr": "0",
+      "link": "/images/safercyber.jpg"
+    }
+  ],
+  "info": [
+    {
+      "t": "safer cyber",
+      "d": "workshop",
+      "de": "tba"
+    }
+  ],
+  "link": "false",
+  "links": [
+    {}
+  ],
+  "txt": "how to stay safe in the web and get what should be yours. this workshop is about creating awareness in the devices we use on a daily bases. it's more about giving some reference points, then giving strict instructions, on how you stay 'safe'. staying safe in the digital space is individual, but the understanding of what is going on, is getting more and more important. this isn't a lecture or a training. bring your own questions and experiences with you and let's discuss them."
+}

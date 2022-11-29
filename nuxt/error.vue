@@ -23,26 +23,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  mounted() {
-    this.indexP = queryContent('data')
-      .only('error')
-      .find()
-    this.indexP.then((value) => {
-      let howMany = value[0].error.length
-      for (let x=0;x<howMany;x++) {
-        this.index[x] = value[0].error[x]
-      }
-    });
-  },
-	data() {
-		return {
-      indexP: [],
-      index: [],
-    };
-	},
-}
+<script setup>
+  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
+  console.log('♕ niki is king ♕')
+  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
+  const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/data/error.json')
+  const index = JSON.parse(indexP.value)
 </script>
 
 <style lang="scss">

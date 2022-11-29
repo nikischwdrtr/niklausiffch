@@ -1,0 +1,52 @@
+{
+  "num": "001",
+  "name": "tnGAN",
+  "images": [
+    {
+      "ifr": "0",
+      "link": "/images/tn.jpg"
+    },
+    {
+      "ifr": "0",
+      "link": "/images/tnGAN_rip01.jpg"
+    },
+    {
+      "ifr": "0",
+      "link": "/images/HAK_0293.jpg"
+    },
+    {
+      "ifr": "1",
+      "link": "https://player.vimeo.com/video/666300916?h=50bb41fee8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+    }
+  ],
+  "info": [
+    {
+      "t": "untitled",
+      "d": "image of exhibition",
+      "de": "2021"
+    },
+    {
+      "t": "untitled",
+      "d": "image of exhibition",
+      "de": "2021"
+    },
+    {
+      "t": "//",
+      "d": "nike tn/90x180 fotodruck/video 1920x1080",
+      "de": "2021"
+    },
+    {
+      "t": "ai interview",
+      "d": "video",
+      "de": "2021"
+    }
+  ],
+  "link": "true",
+  "links": [
+    {
+      "name": "doc",
+      "href": "https://doc.niklausiff.ch/"
+    }
+  ],
+  "txt": "Aus der Untersuchung einer Jugendsubkultur, mit der Hilfe einer künstlichen Intelligenz, welche anhand neuronaler Netzwerke lernt und versucht, eigene Bilder aus dem Gelernten zu generieren, ergab sich für mich die Fragestellung: Was ist Subjektivität und was ist Objektivität? Nehmen wir an, eine künstliche Intelligenz hat noch nie zuvor etwas gesehen, gehört oder erlebt, bis zum Zeitpunkt, an welchem sie von mensch ins Leben gerufen wird. Sie hat weder Vorurteile, Begegnungen, oder eine Meinung. Ab dem Zeitpunkt, an welchem ich sie Lernen lasse, wird sie trotzdem von mir beeinflusst, da ihr nur bestimmte Bilder gezeigt werden. Gebe ich ihr so eine eigene, subjektive Wahrnehmung mit?"
+}

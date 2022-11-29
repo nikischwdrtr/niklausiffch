@@ -1,0 +1,56 @@
+{
+  "num": "002",
+  "name": "artifactual reality",
+  "images": [
+    {
+      "ifr": "1",
+      "link": "https://player.vimeo.com/video/666509300?h=92b99cf6732&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+    },
+    {
+      "ifr": "0",
+      "link": "/images/ar01.jpg"
+    },
+    {
+      "ifr": "0",
+      "link": "/images/IMG_1036.jpg"
+    },
+    {
+      "ifr": "0",
+      "link": "/images/textured_output17.jpg"
+    },
+    {
+      "ifr": "0",
+      "link": "/images/textured_output22.jpg"
+    }
+  ],
+  "info": [
+    {
+      "t": "game walkthrough",
+      "d": "unity",
+      "de": "2021"
+    },
+    {
+      "t": "austellungsansicht",
+      "d": "video game installation",
+      "de": "2021"
+    },
+    {
+      "t": "untitled",
+      "d": "video game installation",
+      "de": "2021"
+    },
+    {
+      "t": "textured output 17",
+      "d": "3d scan texture",
+      "de": "2021"
+    },
+    {
+      "t": "texutred output 22",
+      "d": "3d scan texture",
+      "de": "2021"
+    }
+  ],
+  "link": "false",
+  "links": [{}],
+  "txt": "Ein 3D Videospiel, welches die Unterschiede zwischen der realen Welt und der virtuellen Welt untersucht, als auch spielerisch aufzeigt. Die Untersuchung findet anhand von Artefakten statt. Diese Artefakte, digitale, sowie auch analoge, ziehen sich durch die ganze Installation und beschreiben eine konstante Landschaft. Zudem werden durch einen anderswo platzierten Bewegungssensor Personen registriert, welche in die digitale Welt übersetzt werden und somit eine kontinuierliche Veränderung des virtuellen Raums erzeugen und so gleichzeitig zu neuen Artefakten werden. Die 3D Welt habe ich aufgebaut, indem ich LiDar-Scans von alten Bahngleisen in Basel erstellt habe. Diese Gleise wurden seit fast 100 Jahre nicht befahren und dienen keinem Zweck mehr. Trotzdem möchte ich sie nicht missen, an genau diesem Ort, wo sie immer noch liegen. Genauso erging es mir auch mit den digitalen Artefakten, welche bei den Scans entstanden sind. Sie erfüllen keinen weiteren Zweck, dennoch erklären sie unglaublich viel."
+}

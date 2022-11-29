@@ -54,37 +54,12 @@ a {
 	}
 }
 h3 {
-	a {
-		font-family: PlexLight;
-		font-size: 1.5vw;
-		font-style: italic;
-		font-weight: bold;
-		color: black;
-		&:hover {
-			cursor: text;
-		}
-	}
 	font-family: PlexLight;
   font-size: 1.5vw;
 	font-style: italic;
 	font-weight: bold;
 }
 h4 {
-	a {
-		font-family: WerkLight;
-		font-size: 2.5vw;
-		margin: 0;
-		color: black;
-		font-style: normal;
-		overflow: visible;
-		white-space: normal;
-		text-overflow: initial;
-		&:hover {
-			cursor: pointer;
-			color: rgb(0,255,0);
-			font-style: normal;
-		}
-	}
 	font-family: WerkLight;
   font-size: 2.5vw;
 	margin: 0;
@@ -135,15 +110,9 @@ h6 {
 	}
 	h3 {
 		font-size: 1.5vw;
-		a {
-			font-size: 3vw;
-		}
 	}
 	h4 {
 		font-size: 4vw;
-		a {
-			font-size: 4vw;
-		}
 	}
 	h5 {
 		font-size: 35vw;

@@ -1,0 +1,697 @@
+[
+  {
+    "id": "001",
+    "name": "tnGAN",
+    "desc": "exh",
+    "year": "2021",
+    "link": "/work/tngan",
+    "href": "0"
+  },
+  {
+    "id": "002",
+    "name": "artifactual reality",
+    "desc": "exh",
+    "year": "2021",
+    "link": "/work/artifactualreality",
+    "href": "0"
+  },
+  {
+    "id": "003",
+    "name": "index not found",
+    "desc": "video algorithm",
+    "year": "2021",
+    "link": "/work/indexnotfound",
+    "href": "0"
+  },
+  {
+    "id": "004",
+    "name": "dauer standort",
+    "desc": "exh",
+    "year": "2021 - tba",
+    "link": "/work/dauerstandort",
+    "href": "0"
+  },
+  {
+    "id": "005",
+    "name": "9144 meters well",
+    "desc": "exh video",
+    "year": "2022",
+    "link": "/work/9144meterswell",
+    "href": "0"
+  },
+  {
+    "id": "006",
+    "name": "datasetter",
+    "desc": "curation tool",
+    "year": "2022",
+    "link": "/work/datasetter",
+    "href": "0"
+  },
+  {
+    "id": "007",
+    "name": "safer cyber",
+    "desc": "workshop",
+    "year": "tba",
+    "link": "/work/safercyber",
+    "href": "0"
+  },
+  {
+    "id": "008",
+    "name": "slgAgglo",
+    "desc": "?database_",
+    "year": "wip",
+    "link": "/work/slgagglo",
+    "href": "0"
+  },
+  {
+    "id": "009",
+    "name": "digital identity",
+    "desc": "192.168.0.1",
+    "year": "wip",
+    "link": "/work/digii",
+    "href": "0"
+  },
+  {
+    "id": "010",
+    "name": "poster gen",
+    "desc": "online tool",
+    "year": "2020",
+    "link": "/work/postergen",
+    "href": "0"
+  },
+  {
+    "id": "011",
+    "name": "portfolio",
+    "desc": "fine artig",
+    "year": "updated dez 22",
+    "link": "/portfolio",
+    "href": "0"
+  },
+  {
+    "id": "012",
+    "name": "cv",
+    "desc": "pls ask",
+    "year": "foreva",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "013",
+    "name": "all inclusive",
+    "desc": "tba",
+    "year": "2023",
+    "link": "/other/allinclusive",
+    "href": "0"
+  },
+  {
+    "id": "014",
+    "name": "error",
+    "desc": "404",
+    "year": "eva",
+    "link": "/error",
+    "href": "0"
+  },
+  {
+    "id": "015",
+    "name": "doc",
+    "desc": "prozess dokumentation",
+    "year": "2006 - dato",
+    "link": "https://doc.niklausiff.ch/1",
+    "href": "blank"
+  },
+  {
+    "id": "016",
+    "name": "github",
+    "desc": "open source codes to sell",
+    "year": "20xx",
+    "link": "https://github.com/nikischwdrtr",
+    "href": "blank"
+  },
+  {
+    "id": "017",
+    "name": "shape generator",
+    "desc": "p5 sketch",
+    "year": "2022",
+    "link": "https://editor.p5js.org/jebemtimaiku/full/GalkK8BaW",
+    "href": "blank"
+  },
+  {
+    "id": "018",
+    "name": "archive",
+    "desc": "curated life",
+    "year": "1996 - dato",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "019",
+    "name": "ssdd album cover",
+    "desc": "dms x fxkxghxst",
+    "year": "2021",
+    "link": "https://soundcloud.com/felix-frei-572560384/ssdd-w-fakeghxst-prod-sektion-secco?si=36087c463865495e9cb44616c712edf2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "href": "blank"
+  },
+  {
+    "id": "020",
+    "name": "büsi",
+    "desc": "p5 sketch",
+    "year": "2020 i guess",
+    "link": "https://editor.p5js.org/jebemtimaiku/full/aFbS-vr6E",
+    "href": "blank"
+  },
+  {
+    "id": "021",
+    "name": "1402",
+    "desc": "instrumental",
+    "year": "~2018",
+    "link": "https://soundcloud.com/jebemtimaiku/1402a?si=ef3432838b9449bd86d6be0525e7c5ac&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "href": "blank"
+  },
+  {
+    "id": "022",
+    "name": "the meaning of life",
+    "desc": "mutliplayer browser game",
+    "year": "2021",
+    "link": "https://themeaningoflife.ch/",
+    "href": "blank"
+  },
+  {
+    "id": "023",
+    "name": "gigax rating",
+    "desc": "no zhdk fine arts",
+    "year": "2022 BA",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "024",
+    "name": "surveillance",
+    "desc": "zine",
+    "year": "2020",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "025",
+    "name": "steinbruch",
+    "desc": "fictional band",
+    "year": "rip due covid",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "026",
+    "name": "contact",
+    "desc": "admin@niklausiff.ch",
+    "year": "foreva",
+    "link": "admin@niklausiff.ch",
+    "href": "mail"
+  },
+  {
+    "id": "027",
+    "name": "bappe cover",
+    "desc": "strohpapi tape",
+    "year": "2022 :/",
+    "link": "https://soundcloud.com/felix-frei-572560384/ciniminis?si=36087c463865495e9cb44616c712edf2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "href": "blank"
+  },
+  {
+    "id": "028",
+    "name": "internet manifesto",
+    "desc": "cyberspace independence john barlow",
+    "year": "1996 davos",
+    "link": "https://www.eff.org/cyberspace-independence",
+    "href": "blank"
+  },
+  {
+    "id": "029",
+    "name": "everrythang foo freee",
+    "desc": "100%%% safeee vpn",
+    "year": "???___",
+    "link": "https://thepiratebay.org/index.html",
+    "href": "blank"
+  },{
+    "id": "001",
+    "name": "tnGAN",
+    "desc": "exh",
+    "year": "2021",
+    "link": "/work/tngan",
+    "href": "0"
+  },
+  {
+    "id": "002",
+    "name": "artifactual reality",
+    "desc": "exh",
+    "year": "2021",
+    "link": "/work/artifactualreality",
+    "href": "0"
+  },
+  {
+    "id": "003",
+    "name": "index not found",
+    "desc": "video algorithm",
+    "year": "2021",
+    "link": "/work/indexnotfound",
+    "href": "0"
+  },
+  {
+    "id": "004",
+    "name": "dauer standort",
+    "desc": "exh",
+    "year": "2021 - tba",
+    "link": "/work/dauerstandort",
+    "href": "0"
+  },
+  {
+    "id": "005",
+    "name": "9144 meters well",
+    "desc": "exh video",
+    "year": "2022",
+    "link": "/work/9144meterswell",
+    "href": "0"
+  },
+  {
+    "id": "006",
+    "name": "datasetter",
+    "desc": "curation tool",
+    "year": "2022",
+    "link": "/work/datasetter",
+    "href": "0"
+  },
+  {
+    "id": "007",
+    "name": "safer cyber",
+    "desc": "workshop",
+    "year": "tba",
+    "link": "/work/safercyber",
+    "href": "0"
+  },
+  {
+    "id": "008",
+    "name": "slgAgglo",
+    "desc": "?database_",
+    "year": "wip",
+    "link": "/work/slgagglo",
+    "href": "0"
+  },
+  {
+    "id": "009",
+    "name": "digital identity",
+    "desc": "192.168.0.1",
+    "year": "wip",
+    "link": "/work/digii",
+    "href": "0"
+  },
+  {
+    "id": "010",
+    "name": "poster gen",
+    "desc": "online tool",
+    "year": "2020",
+    "link": "/work/postergen",
+    "href": "0"
+  },
+  {
+    "id": "011",
+    "name": "portfolio",
+    "desc": "fine artig",
+    "year": "updated dez 22",
+    "link": "/portfolio",
+    "href": "0"
+  },
+  {
+    "id": "012",
+    "name": "cv",
+    "desc": "pls ask",
+    "year": "foreva",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "013",
+    "name": "all inclusive",
+    "desc": "tba",
+    "year": "2023",
+    "link": "/other/allinclusive",
+    "href": "0"
+  },
+  {
+    "id": "014",
+    "name": "error",
+    "desc": "404",
+    "year": "eva",
+    "link": "/error",
+    "href": "0"
+  },
+  {
+    "id": "015",
+    "name": "doc",
+    "desc": "prozess dokumentation",
+    "year": "2006 - dato",
+    "link": "https://doc.niklausiff.ch/1",
+    "href": "blank"
+  },
+  {
+    "id": "016",
+    "name": "github",
+    "desc": "open source codes to sell",
+    "year": "20xx",
+    "link": "https://github.com/nikischwdrtr",
+    "href": "blank"
+  },
+  {
+    "id": "017",
+    "name": "shape generator",
+    "desc": "p5 sketch",
+    "year": "2022",
+    "link": "https://editor.p5js.org/jebemtimaiku/full/GalkK8BaW",
+    "href": "blank"
+  },
+  {
+    "id": "018",
+    "name": "archive",
+    "desc": "curated life",
+    "year": "1996 - dato",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "019",
+    "name": "ssdd album cover",
+    "desc": "dms x fxkxghxst",
+    "year": "2021",
+    "link": "https://soundcloud.com/felix-frei-572560384/ssdd-w-fakeghxst-prod-sektion-secco?si=36087c463865495e9cb44616c712edf2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "href": "blank"
+  },
+  {
+    "id": "020",
+    "name": "büsi",
+    "desc": "p5 sketch",
+    "year": "2020 i guess",
+    "link": "https://editor.p5js.org/jebemtimaiku/full/aFbS-vr6E",
+    "href": "blank"
+  },
+  {
+    "id": "021",
+    "name": "1402",
+    "desc": "instrumental",
+    "year": "~2018",
+    "link": "https://soundcloud.com/jebemtimaiku/1402a?si=ef3432838b9449bd86d6be0525e7c5ac&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "href": "blank"
+  },
+  {
+    "id": "022",
+    "name": "the meaning of life",
+    "desc": "mutliplayer browser game",
+    "year": "2021",
+    "link": "https://themeaningoflife.ch/",
+    "href": "blank"
+  },
+  {
+    "id": "023",
+    "name": "gigax rating",
+    "desc": "no zhdk fine arts",
+    "year": "2022 BA",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "024",
+    "name": "surveillance",
+    "desc": "zine",
+    "year": "2020",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "025",
+    "name": "steinbruch",
+    "desc": "fictional band",
+    "year": "rip due covid",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "026",
+    "name": "contact",
+    "desc": "admin@niklausiff.ch",
+    "year": "foreva",
+    "link": "admin@niklausiff.ch",
+    "href": "mail"
+  },
+  {
+    "id": "027",
+    "name": "bappe cover",
+    "desc": "strohpapi tape",
+    "year": "2022 :/",
+    "link": "https://soundcloud.com/felix-frei-572560384/ciniminis?si=36087c463865495e9cb44616c712edf2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "href": "blank"
+  },
+  {
+    "id": "028",
+    "name": "internet manifesto",
+    "desc": "cyberspace independence john barlow",
+    "year": "1996 davos",
+    "link": "https://www.eff.org/cyberspace-independence",
+    "href": "blank"
+  },
+  {
+    "id": "029",
+    "name": "everrythang foo freee",
+    "desc": "100%%% safeee vpn",
+    "year": "???___",
+    "link": "https://thepiratebay.org/index.html",
+    "href": "blank"
+  },
+  {
+    "id": "001",
+    "name": "tnGAN",
+    "desc": "exh",
+    "year": "2021",
+    "link": "/work/tngan",
+    "href": "0"
+  },
+  {
+    "id": "002",
+    "name": "artifactual reality",
+    "desc": "exh",
+    "year": "2021",
+    "link": "/work/artifactualreality",
+    "href": "0"
+  },
+  {
+    "id": "003",
+    "name": "index not found",
+    "desc": "video algorithm",
+    "year": "2021",
+    "link": "/work/indexnotfound",
+    "href": "0"
+  },
+  {
+    "id": "004",
+    "name": "dauer standort",
+    "desc": "exh",
+    "year": "2021 - tba",
+    "link": "/work/dauerstandort",
+    "href": "0"
+  },
+  {
+    "id": "005",
+    "name": "9144 meters well",
+    "desc": "exh video",
+    "year": "2022",
+    "link": "/work/9144meterswell",
+    "href": "0"
+  },
+  {
+    "id": "006",
+    "name": "datasetter",
+    "desc": "curation tool",
+    "year": "2022",
+    "link": "/work/datasetter",
+    "href": "0"
+  },
+  {
+    "id": "007",
+    "name": "safer cyber",
+    "desc": "workshop",
+    "year": "tba",
+    "link": "/work/safercyber",
+    "href": "0"
+  },
+  {
+    "id": "008",
+    "name": "slgAgglo",
+    "desc": "?database_",
+    "year": "wip",
+    "link": "/work/slgagglo",
+    "href": "0"
+  },
+  {
+    "id": "009",
+    "name": "digital identity",
+    "desc": "192.168.0.1",
+    "year": "wip",
+    "link": "/work/digii",
+    "href": "0"
+  },
+  {
+    "id": "010",
+    "name": "poster gen",
+    "desc": "online tool",
+    "year": "2020",
+    "link": "/work/postergen",
+    "href": "0"
+  },
+  {
+    "id": "011",
+    "name": "portfolio",
+    "desc": "fine artig",
+    "year": "updated dez 22",
+    "link": "/portfolio",
+    "href": "0"
+  },
+  {
+    "id": "012",
+    "name": "cv",
+    "desc": "pls ask",
+    "year": "foreva",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "013",
+    "name": "all inclusive",
+    "desc": "tba",
+    "year": "2023",
+    "link": "/other/allinclusive",
+    "href": "0"
+  },
+  {
+    "id": "014",
+    "name": "error",
+    "desc": "404",
+    "year": "eva",
+    "link": "/error",
+    "href": "0"
+  },
+  {
+    "id": "015",
+    "name": "doc",
+    "desc": "prozess dokumentation",
+    "year": "2006 - dato",
+    "link": "https://doc.niklausiff.ch/1",
+    "href": "blank"
+  },
+  {
+    "id": "016",
+    "name": "github",
+    "desc": "open source codes to sell",
+    "year": "20xx",
+    "link": "https://github.com/nikischwdrtr",
+    "href": "blank"
+  },
+  {
+    "id": "017",
+    "name": "shape generator",
+    "desc": "p5 sketch",
+    "year": "2022",
+    "link": "https://editor.p5js.org/jebemtimaiku/full/GalkK8BaW",
+    "href": "blank"
+  },
+  {
+    "id": "018",
+    "name": "archive",
+    "desc": "curated life",
+    "year": "1996 - dato",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "019",
+    "name": "ssdd album cover",
+    "desc": "dms x fxkxghxst",
+    "year": "2021",
+    "link": "https://soundcloud.com/felix-frei-572560384/ssdd-w-fakeghxst-prod-sektion-secco?si=36087c463865495e9cb44616c712edf2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "href": "blank"
+  },
+  {
+    "id": "020",
+    "name": "büsi",
+    "desc": "p5 sketch",
+    "year": "2020 i guess",
+    "link": "https://editor.p5js.org/jebemtimaiku/full/aFbS-vr6E",
+    "href": "blank"
+  },
+  {
+    "id": "021",
+    "name": "1402",
+    "desc": "instrumental",
+    "year": "~2018",
+    "link": "https://soundcloud.com/jebemtimaiku/1402a?si=ef3432838b9449bd86d6be0525e7c5ac&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "href": "blank"
+  },
+  {
+    "id": "022",
+    "name": "the meaning of life",
+    "desc": "mutliplayer browser game",
+    "year": "2021",
+    "link": "https://themeaningoflife.ch/",
+    "href": "blank"
+  },
+  {
+    "id": "023",
+    "name": "gigax rating",
+    "desc": "no zhdk fine arts",
+    "year": "2022 BA",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "024",
+    "name": "surveillance",
+    "desc": "zine",
+    "year": "2020",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "025",
+    "name": "steinbruch",
+    "desc": "fictional band",
+    "year": "rip due covid",
+    "link": "/",
+    "href": "0"
+  },
+  {
+    "id": "026",
+    "name": "contact",
+    "desc": "admin@niklausiff.ch",
+    "year": "foreva",
+    "link": "admin@niklausiff.ch",
+    "href": "mail"
+  },
+  {
+    "id": "027",
+    "name": "bappe cover",
+    "desc": "strohpapi tape",
+    "year": "2022 :/",
+    "link": "https://soundcloud.com/felix-frei-572560384/ciniminis?si=36087c463865495e9cb44616c712edf2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "href": "blank"
+  },
+  {
+    "id": "028",
+    "name": "internet manifesto",
+    "desc": "cyberspace independence john barlow",
+    "year": "1996 davos",
+    "link": "https://www.eff.org/cyberspace-independence",
+    "href": "blank"
+  },
+  {
+    "id": "029",
+    "name": "everrythang foo freee",
+    "desc": "100%%% safeee vpn",
+    "year": "???___",
+    "link": "https://thepiratebay.org/index.html",
+    "href": "blank"
+  }
+]

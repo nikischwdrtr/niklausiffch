@@ -23,52 +23,32 @@
   </div>
 </template>
 
-<script>
-export default {
-  mounted() {
-    console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
-    console.log('♕ niki is king ♕')
-    console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
-    this.indexP = queryContent('data')
-      .only('index')
-      .findOne()
-    this.indexP.then((value) => {
-      let howMany = value.index.length
-      for (let x=0;x<howMany;x++) {
-        this.index[x] = value.index[x]
-      }
-      this.getRandomArray(this.index);
-    })
-  },
-	data() {
-		return {
-      indexP: [],
-      index: [],
-    };
-	},
-  computed: {},
-	methods: {
-    goToLink(link,href) {
-      if (href == 'blank') {
-        window.open(link, '_blank', 'noreferrer')
-      } else if (href == 'mail') {
-        window.location.href = "mailto:admin@niklausiff.ch";
-      } else {
-        this.$router.push({ path: link })
-      }
-    },
-    getRandomArray: function(array) {
-        let currentIndex = array.length,  randomIndex;
-        while (currentIndex != 0) {
-          randomIndex = Math.floor(Math.random() * currentIndex);
-          currentIndex--;
-          [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]];
-        }
-        return array;
-    },
-  },
-}
+<script setup>
+  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
+  console.log('♕ niki is king ♕')
+  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
+  const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/data/index.json')
+  const index = JSON.parse(indexP.value)
+  function goToLink(link,href) {
+    if (href == 'blank') {
+      window.open(link, '_blank', 'noreferrer')
+    } else if (href == 'mail') {
+      window.location.href = "mailto:admin@niklausiff.ch";
+    } else {
+      window.location.href = link
+    }
+  }
+  function getRandomArray(array) {
+    let currentIndex = array.length,  randomIndex;
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+    return array;
+  }
+  getRandomArray(index)
 </script>
 
 <style lang="scss">
