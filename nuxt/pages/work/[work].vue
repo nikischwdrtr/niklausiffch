@@ -18,9 +18,10 @@
     for (let i = 0, len = cont.length; i < len; i++) {
       totalWidth = cont[i].offsetWidth
       newWidth[i] = totalWidth
-      console.log(cont2[i].style.width)
+      console.log('old',cont2[i].style.width)
+      console.log('this how it shoudl',newWidth[i]+'px')
       cont2[i].style.width = newWidth[i]+'px'
-      console.log(cont2[i].style.width)
+      console.log('newWidth',cont2[i].style.width)
     }
   })
 </script>
