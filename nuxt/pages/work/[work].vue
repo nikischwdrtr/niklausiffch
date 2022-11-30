@@ -10,11 +10,10 @@
   const {data: indexP } = await useFetch(pathToJSON)
   const index = JSON.parse(indexP.value)
   onMounted(() => {
-    console.log('dini')
     let totalWidth = 0
     let newWidth = []
     let cont = document.getElementsByClassName('work-img')
-    console.log(cont[0.offsetWidth])
+    console.log(cont[0].offsetWidth)
     let cont2 = document.getElementsByClassName('work-col3-div')
     for (let i = 0, len = cont.length; i < len; i++) {
       totalWidth = cont[i].offsetWidth
