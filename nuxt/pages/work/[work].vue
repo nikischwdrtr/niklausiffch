@@ -13,7 +13,7 @@
     let totalWidth = 0
     let newWidth = []
     let cont = document.getElementsByClassName('work-img')
-    console.log(cont[0])
+    console.log(cont)
     console.log(cont[0].offsetWidth)
     let cont2 = document.getElementsByClassName('work-col3-div')
     for (let i = 0, len = cont.length; i < len; i++) {
