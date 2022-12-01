@@ -3,8 +3,12 @@
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   console.log('♕ niki is king ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
+
   const col3Img = ref(null)
   const col3Div = ref(null)
+  console.log('og img',col3Img.value)
+  console.log('og div',col3Div.value)
+
   const route = useRoute()
   let currentPath = route.path
   const whichJSON = currentPath.slice(6)
@@ -12,6 +16,8 @@
   const {data: indexP } = await useFetch(pathToJSON)
   const index = JSON.parse(indexP.value)
   onMounted(() => {
+    console.log('og img',col3Img.value)
+    console.log('og div',col3Div.value)
     let totalWidth = 0
     let newWidth = []
     let cont = col3Img.value
@@ -22,6 +28,8 @@
       cont2[i].style.width = newWidth[i]+'px'
     }
   })
+  console.log('og img',col3Img.value)
+  console.log('og div',col3Div.value)
 </script>
 
 <template>
