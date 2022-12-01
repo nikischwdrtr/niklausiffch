@@ -1,23 +1,20 @@
 <script setup>
-  import { onMounted,ref} from 'vue'
+  import { onMounted,onUpdated,ref} from 'vue'
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   console.log('♕ niki is king ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
-
   const col3Img = ref(null)
   const col3Div = ref(null)
-  console.log('og img',col3Img.value)
-  console.log('og div',col3Div.value)
-
   const route = useRoute()
   let currentPath = route.path
   const whichJSON = currentPath.slice(6)
   const pathToJSON = 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/work/'+whichJSON+'.json'
   const {data: indexP } = await useFetch(pathToJSON)
   const index = JSON.parse(indexP.value)
+  console.log(index)
   onMounted(() => {
-    console.log('og img',col3Img.value)
-    console.log('og div',col3Div.value)
+    console.log(index)
+    console.log(col3Img.value[0].offsetWidth)
     let totalWidth = 0
     let newWidth = []
     let cont = col3Img.value
@@ -28,8 +25,9 @@
       cont2[i].style.width = newWidth[i]+'px'
     }
   })
-  console.log('og img',col3Img.value)
-  console.log('og div',col3Div.value)
+  onUpdated(() => {
+    console.log('dini fetti muetter')
+  })
 </script>
 
 <template>
