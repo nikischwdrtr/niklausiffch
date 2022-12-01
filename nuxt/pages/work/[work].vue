@@ -1,8 +1,10 @@
 <script setup>
-  import { onMounted } from 'vue'
+  import { onMounted,ref} from 'vue'
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   console.log('♕ niki is king ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
+  const col3Img = ref(null)
+  const col3Div = ref(null)
   const route = useRoute()
   let currentPath = route.path
   const whichJSON = currentPath.slice(6)
@@ -12,10 +14,8 @@
   onMounted(() => {
     let totalWidth = 0
     let newWidth = []
-    let cont = document.getElementsByClassName('work-img')
-    console.log(cont)
-    console.log(cont[0].offsetWidth)
-    let cont2 = document.getElementsByClassName('work-col3-div')
+    let cont = col3Img.value
+    let cont2 = col3Div.value
     for (let i = 0, len = cont.length; i < len; i++) {
       totalWidth = cont[i].offsetWidth
       newWidth[i] = totalWidth
@@ -42,7 +42,7 @@
               </div>
             </template>
             <template template v-if="index.images[i].ifr === '0'">
-              <div class="work-img">
+              <div class="work-img" ref="col3Img">
                 <img :src="index.images[i].link">
               </div>
             </template>
@@ -50,7 +50,7 @@
         </div>
         <div class="work-col3">
           <template  v-for="(info, i) in index.info">
-            <div class="work-col3-div">
+            <div class="work-col3-div" ref="col3Div">
               <h3>{{index.info[i].t}}</h3>
               <p>{{index.info[i].d}}</p>
               <p>{{index.info[i].de}}</p>
