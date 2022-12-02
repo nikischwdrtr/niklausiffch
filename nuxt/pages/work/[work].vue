@@ -1,5 +1,5 @@
 <script setup>
-  import { onMounted,onUpdated,ref} from 'vue'
+  import { onMounted,ref} from 'vue'
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   console.log('♕ niki is king ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
@@ -11,22 +11,20 @@
   const pathToJSON = 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/work/'+whichJSON+'.json'
   const {data: indexP } = await useFetch(pathToJSON)
   const index = JSON.parse(indexP.value)
-  console.log(index)
   onMounted(() => {
-    console.log(index)
-    console.log(col3Img.value[0].offsetWidth)
-    let totalWidth = 0
-    let newWidth = []
-    let cont = col3Img.value
-    let cont2 = col3Div.value
-    for (let i = 0, len = cont.length; i < len; i++) {
-      totalWidth = cont[i].offsetWidth
-      newWidth[i] = totalWidth
-      cont2[i].style.width = newWidth[i]+'px'
-    }
-  })
-  onUpdated(() => {
-    console.log('dini fetti muetter')
+    setTimeout(() => {
+      console.log(index)
+      console.log(col3Img.value[0].offsetWidth)
+      let totalWidth = 0
+      let newWidth = []
+      let cont = col3Img.value
+      let cont2 = col3Div.value
+      for (let i = 0, len = cont.length; i < len; i++) {
+        totalWidth = cont[i].offsetWidth
+        newWidth[i] = totalWidth
+        cont2[i].style.width = newWidth[i]+'px'
+      }
+    }, "500")
   })
 </script>
 
