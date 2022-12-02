@@ -3,6 +3,8 @@
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   console.log('♕ niki is king ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
+  const col3Img = ref(null)
+  const col3Div = ref(null)
   const route = useRoute()
   let currentPath = route.path
   const whichJSON = currentPath.slice(6)
@@ -10,15 +12,17 @@
   const {data: indexP } = await useFetch(pathToJSON)
   const index = JSON.parse(indexP.value)
   onMounted(() => {
-    let totalWidth = 0
-    let newWidth = []
-    let cont = document.getElementsByClassName('other-img')
-    let cont2 = document.getElementsByClassName('other-col3-div')
-    for (let i = 0, len = cont.length; i < len; i++) {
-      totalWidth = cont[i].offsetWidth
-      newWidth[i] = totalWidth
-      cont2[i].style.width = newWidth[i]+'px'
-    }
+    setTimeout(() => {
+      let totalWidth = 0
+      let newWidth = []
+      let cont = col3Img.value
+      let cont2 = col3Div.value
+      for (let i = 0, len = cont.length; i < len; i++) {
+        totalWidth = cont[i].offsetWidth
+        newWidth[i] = totalWidth
+        cont2[i].style.width = newWidth[i]+'px'
+      }
+    }, "200")
   })
 </script>
 
@@ -40,7 +44,7 @@
               </div>
             </template>
             <template template v-if="index.images[i].ifr === '0'">
-              <div class="other-img">
+              <div class="other-img" ref="col3Img">
                 <img :src="index.images[i].link">
               </div>
             </template>
@@ -48,7 +52,7 @@
         </div>
         <div class="other-col3">
           <template  v-for="(info, i) in index.info">
-            <div class="other-col3-div">
+            <div class="other-col3-div" ref="col3Div">
               <h3>{{index.info[i].t}}</h3>
               <p>{{index.info[i].d}}</p>
               <p>{{index.info[i].de}}</p>

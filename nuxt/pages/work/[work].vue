@@ -13,8 +13,6 @@
   const index = JSON.parse(indexP.value)
   onMounted(() => {
     setTimeout(() => {
-      console.log(index)
-      console.log(col3Img.value[0].offsetWidth)
       let totalWidth = 0
       let newWidth = []
       let cont = col3Img.value
@@ -24,7 +22,7 @@
         newWidth[i] = totalWidth
         cont2[i].style.width = newWidth[i]+'px'
       }
-    }, "500")
+    }, "200")
   })
 </script>
 
