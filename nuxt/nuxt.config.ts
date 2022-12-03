@@ -7,9 +7,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+  modules: [
+    '@vueuse/nuxt',
+  ],
   css: [
     '~/assets/css/main.scss',
   ],
-  target: 'static',
-  ssr: true,
 })

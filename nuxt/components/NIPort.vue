@@ -25,6 +25,7 @@ export default {
   transform: translate(-50%,-50%) scale(1,1);
   z-index: 20;
   filter: blur(0.4rem);
+  line-height: .9;
 }
 @media (max-width: 600px) {
   .NIPort-container {

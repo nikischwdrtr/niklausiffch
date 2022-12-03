@@ -1,5 +1,4 @@
 <script setup>
-  import { onMounted,ref} from 'vue'
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   console.log('♕ niki is king ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
@@ -10,20 +9,25 @@
   const whichJSON = currentPath.slice(6)
   const pathToJSON = 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/work/'+whichJSON+'.json'
   const {data: indexP } = await useFetch(pathToJSON)
-  const index = JSON.parse(indexP.value)
-  onMounted(() => {
-    setTimeout(() => {
+  const index = await JSON.parse(indexP.value)
+  const { isLoading } = useImage({ src: index[0] })
+onMounted(() => {
+  watch(isLoading, (value) => {
+    if (isLoading.value === false) {
       let totalWidth = 0
       let newWidth = []
       let cont = col3Img.value
       let cont2 = col3Div.value
       for (let i = 0, len = cont.length; i < len; i++) {
+        console.log(cont[0])
         totalWidth = cont[i].offsetWidth
         newWidth[i] = totalWidth
         cont2[i].style.width = newWidth[i]+'px'
       }
-    }, "200")
+    }
   })
+})
+
 </script>
 
 <template>
@@ -37,7 +41,7 @@
         <div class="work-col2">
           <template  v-for="(img, i) in index.images">
             <template template v-if="index.images[i].ifr === '1'">
-              <div class="work-img">
+              <div class="work-img" ref="col3Img">
                 <div class="work-ifr">
                   <iframe :src="index.images[i].link" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="dauer standort render"></iframe>
                 </div>  
@@ -165,11 +169,6 @@ h3 {
   }
   h4 {
     font-size: 4vw;
-  }
-}
-@media (min-width: 1550px) {
-  .work-col2 {
-    margin-bottom: -5%;
   }
 }
 </style>

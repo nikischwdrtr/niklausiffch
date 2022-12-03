@@ -1,5 +1,4 @@
 <script setup>
-  import { onMounted } from 'vue'
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   console.log('♕ niki is king ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
@@ -10,25 +9,30 @@
   const whichJSON = currentPath.slice(6)
   const pathToJSON = 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/other/'+whichJSON+'.json'
   const {data: indexP } = await useFetch(pathToJSON)
-  const index = JSON.parse(indexP.value)
-  onMounted(() => {
-    setTimeout(() => {
+  const index = await JSON.parse(indexP.value)
+  const { isLoading } = useImage({ src: index[0] })
+onMounted(() => {
+  watch(isLoading, (value) => {
+    if (isLoading.value === false) {
       let totalWidth = 0
       let newWidth = []
       let cont = col3Img.value
       let cont2 = col3Div.value
       for (let i = 0, len = cont.length; i < len; i++) {
+        console.log(cont[0])
         totalWidth = cont[i].offsetWidth
         newWidth[i] = totalWidth
         cont2[i].style.width = newWidth[i]+'px'
       }
-    }, "200")
+    }
   })
+})
+
 </script>
 
 <template>
   <div class="other-container">
-    <NI />
+    <NIPort />
       <div class="other-col1">
         <h4 class="other-newh4">{{index.num}}</h4>
         <h4 class="other-newh4">{{index.name}}</h4>
@@ -37,7 +41,7 @@
         <div class="other-col2">
           <template  v-for="(img, i) in index.images">
             <template template v-if="index.images[i].ifr === '1'">
-              <div class="other-img">
+              <div class="other-img" ref="col3Img">
                 <div class="other-ifr">
                   <iframe :src="index.images[i].link" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="dauer standort render"></iframe>
                 </div>  
@@ -62,7 +66,7 @@
       </div>
       <div class="other-col4">
         <template v-if="index.link" v-for="(links, i) in index.links">
-          <a v-if="index.link" class="other-links" :href="index.links" target="_blank">doc</a>
+          <a class="other-links" :href="index.links[i].href" target="_blank">{{index.links[i].name}}</a>
         </template>
       </div>
       <h4 class="other-newh4">{{index.txt}}</h4>
@@ -150,14 +154,14 @@ h3 {
   }
   .other-col2 {
     img {
-      width: 100vw;
+      width: 98vw;
+      max-height: 70vh;
     }
   }
   .other-col3 {
     margin-bottom: 5%;
     div {
-      width: 98vw;
-      max-height: 70vh;
+      width: 100vw;
     }
   }
   h3 {
@@ -165,11 +169,6 @@ h3 {
   }
   h4 {
     font-size: 4vw;
-  }
-}
-@media (min-width: 1550px) {
-  .other-col2 {
-    margin-bottom: -5%;
   }
 }
 </style>
