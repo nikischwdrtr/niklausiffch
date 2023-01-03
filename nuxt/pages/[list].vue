@@ -1,24 +1,24 @@
 <template>
   <div class="lst-container">
     <List />
-    <!-- <template  v-for="(index, i) in index">
+    <template  v-for="(hallo, fuck) in index">
       <section>
         <div class="lst-col" @click="goToLink(index.link)">
           <div class="lst-cell">
-            <h4>{{index.id}}</h4>
+            <h4>{{fuck}}</h4>
           </div>
           <div class="lst-cell">
-            <h4>{{index.name}}</h4>
+            <h4>{{hallo[0].nameDesc}}</h4>
           </div>
           <div class="lst-cell">
-            <h4>{{index.desc}}</h4>
+            <h4>{{hallo[1].descDesc}}</h4>
           </div>
           <div class="lst-cell">
-            <h4>{{index.year}}</h4>
+            <h4>{{hallo[2].yearDesc}}</h4>
           </div>
         </div>
       </section>
-    </template> -->
+    </template>
     <Footer />
   </div>
 </template>
@@ -30,38 +30,38 @@
   const route = useRoute()
   let currentPath = route.path
   const whichJSON = currentPath.slice(1)
-  // console.log(whichJSON)
   const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json')
   const indexAll = await JSON.parse(indexP.value)
   let whichData = []
-  indexAll.forEach((item, index) => {
-    console.log(item)
-    if (item == whichJSON) {
-      console.log(item)
-    }
-
-    // item.forEach((elem, index2) => {
-    //   if (elem == whichJSON) {
-    //     whichData[i] = i
-    //   }
-    //   item[index].tags = 
-    // })
-  })
-  // for (let i=0; i<indexAll.length; i++) {
-  //   for (let i=0; i<)
-  //   if (indexAll[i]. == whichJSON) {
-  //     whichData[i] = i
-  //   }
-  // }
-  // const index = indexAll[whichData].port
+  let index = []
+  if (whichJSON == 'portfolio') {
+    indexAll.forEach((item, index) => {
+      if (item[4].portfolio == '1') {
+        whichData[index-1] = index
+      }
+    })
+    whichData.forEach((item, i) => {
+      index.push(indexAll[whichData[i]])
+    })
+  } else {
+    indexAll.forEach((item, i) => {
+      if (item[2].year == whichJSON) {
+        whichData[i-1] = i
+        whichData.forEach((item2, i2) => {
+          index.push(indexAll[whichData[i2]])
+          console.log(indexAll[whichData[i2]])
+        })
+      }
+    })
+  }
 </script>
 
 <style lang="scss">
-.port-col {
+.lst-col {
   display: grid;
   grid-template-columns: 7% 40% 30% 20%;
 }
-.port-col1 {
+.lst-col1 {
   top: 0;
   left: 0;
   width: 98%;
@@ -71,7 +71,7 @@
   z-index: 10;
 }
 @media (max-width: 600px) {
-  .port-col {
+  .lst-col {
     grid-template-columns: 10% 35% 35% 20%;
   } 
 }

@@ -21,18 +21,18 @@
     </template>
     <template  v-for="(index, i) in index">
       <section>
-        <div class="index-col" @click="goToLink(index.link,index.linkName)">
-          <div class="index-cell">
+        <div class="index-col">
+          <div class="index-cell" @click="goToLink(index[3].link,index[0].name)">
             <h4>{{i}}</h4>
           </div>
-          <div class="index-cell">
-            <h4>{{index.name}}</h4>
+          <div class="index-cell" @click="goToLink(index[3].link,index[0].name)">
+            <h4>{{index[0].nameDesc}}</h4>
           </div>
-          <div class="index-cell">
-            <h4>{{index.desc}}</h4>
+          <div class="index-cell" @click="goToListDesc(index[3].link,index[1].desc,index[0].name)">
+            <h4>{{index[1].descDesc}}</h4>
           </div>
-          <div class="index-cell">
-            <h4>{{index.year}}</h4>
+          <div class="index-cell" @click="goToListYear(index[3].link,index[2].year,index[0].name)">
+            <h4>{{index[2].yearDesc}}</h4>
           </div>
         </div>
       </section>
@@ -62,6 +62,24 @@
       window.open(linkName, '_blank', 'noreferrer')
     } else if (link == '4') {
       window.location.href = linkName
+    }
+  }
+  function goToListDesc(link,desc,linkName) {
+    if (link == '3') {
+      window.open(linkName, '_blank', 'noreferrer')
+    } else if (link == '4') {
+      window.location.href = linkName
+    } else {
+      window.location.href = '/'+desc
+    }
+  }
+  function goToListYear(link,year,linkName) {
+    if (link == '3') {
+      window.open(linkName, '_blank', 'noreferrer')
+    } else if (link == '4') {
+      window.location.href = linkName
+    } else {
+      window.location.href = '/'+year
     }
   }
   function getRandomArray(array) {
