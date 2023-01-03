@@ -1,11 +1,29 @@
 <template>
   <div class="index-container">
-    <NI />
+    <List />
+    <template  v-for="(index, i) in 3">
+      <section>
+        <div class="index-col" @click="goToPort()">
+          <div class="index-cell">
+            <h4>000</h4>
+          </div>
+          <div class="index-cell">
+            <h4>portfolio</h4>
+          </div>
+          <div class="index-cell">
+            <h4>last update</h4>
+          </div>
+          <div class="index-cell">
+            <h4>dez 22</h4>
+          </div>
+        </div>
+      </section>
+    </template>
     <template  v-for="(index, i) in index">
       <section>
-        <div class="index-col" @click="goToLink(index.link,index.href)">
+        <div class="index-col" @click="goToLink(index.link,index.linkName)">
           <div class="index-cell">
-            <h4>{{index.id}}</h4>
+            <h4>{{i}}</h4>
           </div>
           <div class="index-cell">
             <h4>{{index.name}}</h4>
@@ -27,19 +45,23 @@
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   console.log('♕ niki is king ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
-  const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/data/index.json')
+  const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json')
   const index = JSON.parse(indexP.value)
-  function goToLink(link,href) {
-    if (link == 'false') {
+  const router = useRouter()
+  function goToPort() {
+    router.push({ path: "/portfolio" })
+  }
+  function goToLink(link,linkName) {
+    if (link == '0') {
       void(0)
-    } else {
-      if (href == 'blank') {
-        window.open(link, '_blank', 'noreferrer')
-      } else if (href == 'mail') {
-        window.location.href = "mailto:admin@niklausiff.ch";
-      } else {
-        window.location.href = link
-      }
+    } else if (link == '1') {
+      window.location.href = '/portfolio/'+linkName
+    } else if (link == '2') {
+      window.location.href = '/work/'+linkName
+    } else if (link == '3') {
+      window.open(linkName, '_blank', 'noreferrer')
+    } else if (link == '4') {
+      window.location.href = linkName
     }
   }
   function getRandomArray(array) {

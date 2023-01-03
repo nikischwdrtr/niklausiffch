@@ -7,10 +7,30 @@
   const route = useRoute()
   let currentPath = route.path
   const whichJSON = currentPath.slice(6)
-  const pathToJSON = 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/work/'+whichJSON+'.json'
+  const pathToJSON = 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json'
   const {data: indexP } = await useFetch(pathToJSON)
-  const index = await JSON.parse(indexP.value)
+  const indexAll = await JSON.parse(indexP.value)
+  let whichData = 0
+  for (let i=0; i < indexAll.length; i++) {
+    if (indexAll[i].linkName == whichJSON) {
+      whichData = i
+    }
+  }
+  const index = indexAll[whichData].port
   const { isLoading } = useImage({ src: index[0] })
+  function imgFull(link) {
+    let img = document.getElementById('work-imgFull')
+    let bg = document.getElementById('work-imgFull-div')
+    img.src = link
+    img.style.transform = 'translate(-50%,-50%) scale(1)'
+    bg.style.display = 'initial'
+  }
+  function imgClose() {
+    let img = document.getElementById('work-imgFull')
+    let bg = document.getElementById('work-imgFull-div')
+    img.style.transform = 'translate(-50%,-50%) scale(0)'
+    bg.style.display = 'none'
+  }
 onMounted(() => {
   watch(isLoading, (value) => {
     if (isLoading.value === false) {
@@ -19,7 +39,6 @@ onMounted(() => {
       let cont = col3Img.value
       let cont2 = col3Div.value
       for (let i = 0, len = cont.length; i < len; i++) {
-        console.log(cont[0])
         totalWidth = cont[i].offsetWidth
         newWidth[i] = totalWidth
         cont2[i].style.width = newWidth[i]+'px'
@@ -27,14 +46,14 @@ onMounted(() => {
     }
   })
 })
-
 </script>
 
 <template>
   <div class="work-container">
-    <NIPort />
+    <List />
       <div class="work-col1">
-        <h4 class="work-newh4">{{index.num}}</h4>
+        <h4 class="work-newh4">00</h4>
+        <!-- <h4 class="work-newh4">{{index.num}}</h4> -->
         <h4 class="work-newh4">{{index.name}}</h4>
       </div>
       <div class="work-col2-3">
@@ -49,7 +68,7 @@ onMounted(() => {
             </template>
             <template template v-if="index.images[i].ifr === '0'">
               <div class="work-img" ref="col3Img">
-                <img :src="index.images[i].link">
+                <img :src="index.images[i].link" :id="index.images[i].link"  @click="imgFull(index.images[i].link)">
               </div>
             </template>
           </template>
@@ -71,6 +90,8 @@ onMounted(() => {
       </div>
       <h4 class="work-newh4">{{index.txt}}</h4>
     <Footer />
+    <div id="work-imgFull-div" @click="imgClose()"></div>
+    <img id="work-imgFull" src="" @click="imgClose()">
   </div>
 </template>
 
@@ -92,6 +113,7 @@ onMounted(() => {
   position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
+  z-index: 1;
 }
 .work-col2 {
   position: relative;
@@ -102,21 +124,22 @@ onMounted(() => {
   z-index: 1;
   img {
     display: flex;
-    min-width: 50vw;
-    max-height: 90vh;
+    width: 50vw;
+    height: 90vh;
+    cursor: crosshair;
   }
 }
 .work-ifr {
   display: flex;
   position: relative;
   padding:56.25% 0 0 0;
-  min-width: 100vw;
+  width: 50vw;
   iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
-    height: 90%;
+    width: 50vw;
+    height: 90vh;
   }
 }
 .work-col3 {
@@ -147,6 +170,30 @@ h3 {
   &:hover {
 	  cursor: text;
 	}
+}
+#work-imgFull-div {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  z-index: 29;
+}
+#work-imgFull {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: scale(0);
+  transform: translate(-50%,-50%) scale(0);
+  max-width: 98vw;
+  max-height: 98vh;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  z-index: 30;
 }
 @media (max-width: 600px) {
   .work-col1 {
