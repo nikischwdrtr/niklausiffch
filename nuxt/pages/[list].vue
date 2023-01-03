@@ -43,14 +43,14 @@
     whichData.forEach((item, i) => {
       index.push(indexAll[whichData[i]])
     })
+
+
+
   } else {
     indexAll.forEach((item, i) => {
       if (item[2].year == whichJSON) {
-        whichData[i-1] = i
-        whichData.forEach((item2, i2) => {
-          index.push(indexAll[whichData[i2]])
-          console.log(indexAll[whichData[i2]])
-        })
+        whichData[i] = i
+        index.push(item)
       }
     })
   }
