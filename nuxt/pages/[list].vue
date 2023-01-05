@@ -46,6 +46,8 @@
     indexAll.forEach((item, i) => {
       if (item[2].year == whichJSON) {
         index.push(item)
+      } else if (item[1].desc == whichJSON) {
+        index.push(item)
       }
     })
   }
