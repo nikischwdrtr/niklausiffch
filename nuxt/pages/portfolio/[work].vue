@@ -6,7 +6,7 @@
   const col3Div = ref(null)
   const route = useRoute()
   let currentPath = route.path
-  const whichJSON = currentPath.slice(6)
+  const whichJSON = currentPath.slice(11)
   const pathToJSON = 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json'
   const {data: indexP } = await useFetch(pathToJSON)
   const indexAll = await JSON.parse(indexP.value)

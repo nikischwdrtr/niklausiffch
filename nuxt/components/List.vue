@@ -6,19 +6,24 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-		return {
-      listName: 'portfolio',
-    };
-	},
-	methods: {
-    goHome: function () {
-      this.$router.push({ path: "/" });
-    },
-  },
-}
+
+<script setup>
+  const route = useRoute()
+  const router = useRouter()
+  let currentPath = route.path
+  let listName = ''
+  if (currentPath == '/') {
+    listName = 'niklaus iff'
+  } else if (currentPath.indexOf('/portfolio/') > -1) {
+    listName = 'niklaus iff'
+  } else if (currentPath.indexOf('/work/') > -1) {
+    listName = 'niklaus iff'
+  } else {
+    listName = currentPath.replace('/', '');
+  }
+  function goHome() {
+    router.push({ path: "/" })
+  }
 </script>
 
 <style lang="scss">
@@ -30,6 +35,12 @@ export default {
   transform: translate(-50%,-50%) scale(1,1);
   z-index: 20;
   filter: blur(0.4rem);
+  line-height: .9;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    filter: blur(0.8rem);
+  }
 }
 @media (max-width: 600px) {
   .List-container {
