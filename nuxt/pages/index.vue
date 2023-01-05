@@ -1,11 +1,11 @@
 <template>
   <div class="index-container">
     <List />
-    <template  v-for="(index, i) in 3">
+    <template  v-for="(index, i) in 5">
       <section>
         <div class="index-col" @click="goToPort()">
           <div class="index-cell">
-            <h4>000</h4>
+            <h4>!00</h4>
           </div>
           <div class="index-cell">
             <h4>portfolio</h4>
@@ -23,7 +23,7 @@
       <section>
         <div class="index-col">
           <div class="index-cell" @click="goToLink(index[3].link,index[0].name)">
-            <h4>{{i}}</h4>
+            <h4>{{getNumbers(index[5]+1)}}</h4>
           </div>
           <div class="index-cell" @click="goToLink(index[3].link,index[0].name)">
             <h4>{{index[0].nameDesc}}</h4>
@@ -48,6 +48,10 @@
   const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json')
   const index = JSON.parse(indexP.value)
   const router = useRouter()
+  index.forEach((item, i) => {
+    index[i].push(i)
+  })
+  getRandomArray(index)
   function goToPort() {
     router.push({ path: "/portfolio" })
   }
@@ -65,22 +69,10 @@
     }
   }
   function goToListDesc(link,desc,linkName) {
-    if (link == '3') {
-      window.open(linkName, '_blank', 'noreferrer')
-    } else if (link == '4') {
-      window.location.href = linkName
-    } else {
-      window.location.href = '/'+desc
-    }
+    window.location.href = '/'+desc
   }
   function goToListYear(link,year,linkName) {
-    if (link == '3') {
-      window.open(linkName, '_blank', 'noreferrer')
-    } else if (link == '4') {
-      window.location.href = linkName
-    } else {
-      window.location.href = '/'+year
-    }
+    window.location.href = '/'+year
   }
   function getRandomArray(array) {
     let currentIndex = array.length,  randomIndex;
@@ -92,7 +84,18 @@
     }
     return array;
   }
-  getRandomArray(index)
+  function getNumbers(num, size) {
+    let s = ''
+    let numS = num.toString()
+    if (numS.length <= 1) {
+      s = '00' + numS
+    } else if (numS.length <= 2) {
+      s = '0' + numS
+    } else {
+      s = numS
+    }
+    return s
+  }
 </script>
 
 <style lang="scss">

@@ -8,9 +8,6 @@
 
 
 <script setup>
-  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
-  console.log('♕ niki is king ♕')
-  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   const route = useRoute()
   const router = useRouter()
   let currentPath = route.path
@@ -25,13 +22,7 @@
     listName = currentPath.replace('/', '');
   }
   function goHome() {
-    if (currentPath != '/') {
-      router.back()
-    } else if (currentPath.indexOf('/portfolio/') > -1) {
-      router.push({ path: "/portfolio" })
-    } else {
-      router.push({ path: "/" })
-    }
+    router.push({ path: "/" })
   }
 </script>
 

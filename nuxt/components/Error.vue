@@ -25,6 +25,12 @@ export default {
   transform: translate(-50%,-50%) scale(1,1);
   z-index: 20;
   filter: blur(0.4rem);
+  line-height: .9;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    filter: blur(0.8rem);
+  }
 }
 @media (max-width: 600px) {
   .Err-container {

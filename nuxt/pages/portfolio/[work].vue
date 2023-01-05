@@ -11,12 +11,17 @@
   const {data: indexP } = await useFetch(pathToJSON)
   const indexAll = await JSON.parse(indexP.value)
   let whichData = 0
-  for (let i=0; i < indexAll.length; i++) {
-    if (indexAll[i].linkName == whichJSON) {
-      whichData = i
+  let indexPort = []
+  indexAll.forEach((item, i) => {
+    indexAll[i].push(i)
+  })
+  indexAll.forEach((item, i) => {
+    if (item[0].name == whichJSON) {
+      indexPort.push(item)
     }
-  }
-  const index = indexAll[whichData].port
+  })
+  const indexNum = indexPort[0][5]+1
+  const index = indexPort[0][4].port
   const { isLoading } = useImage({ src: index[0] })
   function imgFull(link) {
     let img = document.getElementById('work-imgFull')
@@ -31,67 +36,78 @@
     img.style.transform = 'translate(-50%,-50%) scale(0)'
     bg.style.display = 'none'
   }
-onMounted(() => {
-  watch(isLoading, (value) => {
-    if (isLoading.value === false) {
-      let totalWidth = 0
-      let newWidth = []
-      let cont = col3Img.value
-      let cont2 = col3Div.value
-      for (let i = 0, len = cont.length; i < len; i++) {
-        totalWidth = cont[i].offsetWidth
-        newWidth[i] = totalWidth
-        cont2[i].style.width = newWidth[i]+'px'
-      }
+  function getNumbers(num) {
+    let s = ''
+    let numS = num.toString()
+    if (numS.length <= 1) {
+      s = '00' + numS
+    } else if (numS.length <= 2) {
+      s = '0' + numS
+    } else {
+      s = numS
     }
+    return s
+  }
+  onMounted(() => {
+    watch(isLoading, (value) => {
+      if (isLoading.value === false) {
+        let totalWidth = 0
+        let newWidth = []
+        let cont = col3Img.value
+        let cont2 = col3Div.value
+        for (let i = 0, len = cont.length; i < len; i++) {
+          totalWidth = cont[i].offsetWidth
+          newWidth[i] = totalWidth
+          cont2[i].style.width = newWidth[i]+'px'
+        }
+      }
+    })
   })
-})
 </script>
 
 <template>
   <div class="work-container">
     <List />
-      <div class="work-col1">
-        <h4 class="work-newh4">00</h4>
-        <!-- <h4 class="work-newh4">{{index.num}}</h4> -->
-        <h4 class="work-newh4">{{index.name}}</h4>
-      </div>
-      <div class="work-col2-3">
-        <div class="work-col2">
-          <template  v-for="(img, i) in index.images">
-            <template template v-if="index.images[i].ifr === '1'">
-              <div class="work-img" ref="col3Img">
-                <div class="work-ifr">
-                  <iframe :src="index.images[i].link" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="dauer standort render"></iframe>
-                </div>  
-              </div>
-            </template>
-            <template template v-if="index.images[i].ifr === '0'">
-              <div class="work-img" ref="col3Img">
-                <img :src="index.images[i].link" :id="index.images[i].link"  @click="imgFull(index.images[i].link)">
-              </div>
-            </template>
-          </template>
-        </div>
-        <div class="work-col3">
-          <template  v-for="(info, i) in index.info">
-            <div class="work-col3-div" ref="col3Div">
-              <h3>{{index.info[i].t}}</h3>
-              <p>{{index.info[i].d}}</p>
-              <p>{{index.info[i].de}}</p>
+    <div class="work-col1">
+      <h4 class="work-newh4">{{getNumbers(indexNum)}}</h4>
+      <h4 class="work-newh4">{{index.name}}</h4>
+    </div>
+    <div class="work-col2-3">
+      <div class="work-col2">
+        <template  v-for="(img, i) in index.images">
+          <template template v-if="index.images[i].ifr === '1'">
+            <div class="work-img" ref="col3Img">
+              <div class="work-ifr">
+                <iframe :src="index.images[i].link" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="dauer standort render"></iframe>
+              </div>  
             </div>
           </template>
-        </div>
-      </div>
-      <div class="work-col4">
-        <template v-if="index.link" v-for="(links, i) in index.links">
-          <a class="work-links" :href="index.links[i].href" target="_blank">{{index.links[i].name}}</a>
+          <template template v-if="index.images[i].ifr === '0'">
+            <div class="work-img" ref="col3Img">
+              <img :src="index.images[i].link" :id="index.images[i].link"  @click="imgFull(index.images[i].link)">
+            </div>
+          </template>
         </template>
       </div>
-      <h4 class="work-newh4">{{index.txt}}</h4>
-    <Footer />
+      <div class="work-col3">
+        <template  v-for="(info, i) in index.info">
+          <div class="work-col3-div" ref="col3Div">
+            <h3>{{index.info[i].t}}</h3>
+            <p>{{index.info[i].d}}</p>
+            <p>{{index.info[i].de}}</p>
+          </div>
+        </template>
+      </div>
+    </div>
+    <div class="work-col4">
+      <template v-if="index.link" v-for="(links, i) in index.links">
+        <a class="work-links" :href="index.links[i].href" target="_blank">{{index.links[i].name}}</a>
+      </template>
+    </div>
+    <h2 class="work-newh4">{{index.txt}}</h2>
     <div id="work-imgFull-div" @click="imgClose()"></div>
     <img id="work-imgFull" src="" @click="imgClose()">
+    <Footer />
   </div>
 </template>
 
@@ -109,7 +125,6 @@ onMounted(() => {
   z-index: 10;
 }
 .work-col2-3 {
-  margin-top: -2%;
   position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -118,37 +133,38 @@ onMounted(() => {
 .work-col2 {
   position: relative;
   display: flex;
-  top: 3vh;
   width: 100%;
   gap: 6px;
   z-index: 1;
   img {
     display: flex;
     width: 50vw;
-    height: 90vh;
+    max-height: 90vh;
     cursor: crosshair;
   }
 }
 .work-ifr {
-  display: flex;
   position: relative;
-  padding:56.25% 0 0 0;
+  display: block;
   width: 50vw;
   iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50vw;
-    height: 90vh;
+    width: 100%;
+    height: 100%;
   }
+}
+.work-ifr::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
 }
 .work-col3 {
   position: relative;
   display: inline-flex;
   margin-top: -10px;
-  margin-bottom: 30px;
   line-height: 20%;
-  top: 3vh;
   gap: 6px;
   z-index: 1;
   div {
@@ -156,7 +172,7 @@ onMounted(() => {
   }
 }
 .work-col4 {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   line-height: 20%;
   width: 100%;
 }
@@ -166,6 +182,8 @@ onMounted(() => {
 	white-space: normal;
 	text-overflow: initial;
 }
+
+
 h3 {
   &:hover {
 	  cursor: text;

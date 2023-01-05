@@ -36,7 +36,6 @@ export default {
 .Footer-container {
   display: grid;
   width: 100%;
-  height: 10vh;
   grid-template-columns: 7% 40% 30% 20%;
   a {
     display: block;

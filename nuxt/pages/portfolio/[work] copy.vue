@@ -6,7 +6,7 @@
   const col3Div = ref(null)
   const route = useRoute()
   let currentPath = route.path
-  const whichJSON = currentPath.slice(6)
+  const whichJSON = currentPath.slice(11)
   const pathToJSON = 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json'
   const {data: indexP } = await useFetch(pathToJSON)
   const indexAll = await JSON.parse(indexP.value)
@@ -125,6 +125,7 @@
   z-index: 10;
 }
 .work-col2-3 {
+  margin-top: -2%;
   position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -133,38 +134,37 @@
 .work-col2 {
   position: relative;
   display: flex;
+  top: 3vh;
   width: 100%;
   gap: 6px;
   z-index: 1;
   img {
     display: flex;
-    width: 50vw;
+    min-width: 50vw;
     max-height: 90vh;
     cursor: crosshair;
   }
 }
 .work-ifr {
+  display: flex;
   position: relative;
-  display: block;
+  padding:56.25% 0 0 0;
   width: 50vw;
   iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 50vw;
+    height: 90vh;
   }
-}
-.work-ifr::before {
-    display: block;
-    content: "";
-    padding-top: 56.25%;
 }
 .work-col3 {
   position: relative;
   display: inline-flex;
   margin-top: -10px;
+  margin-bottom: 30px;
   line-height: 20%;
+  top: 3vh;
   gap: 6px;
   z-index: 1;
   div {
@@ -172,7 +172,7 @@
   }
 }
 .work-col4 {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   line-height: 20%;
   width: 100%;
 }
@@ -182,8 +182,6 @@
 	white-space: normal;
 	text-overflow: initial;
 }
-
-
 h3 {
   &:hover {
 	  cursor: text;
