@@ -14,7 +14,7 @@
             <h4>last update</h4>
           </div>
           <div class="index-cell">
-            <h4>dez 22</h4>
+            <h4>jan 23</h4>
           </div>
         </div>
       </section>
