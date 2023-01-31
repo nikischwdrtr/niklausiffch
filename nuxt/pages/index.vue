@@ -1,43 +1,25 @@
 <template>
   <div class="index-container">
     <List />
-    <template  v-for="(index, i) in 5">
-      <section>
-        <div class="index-col" @click="goToPort()">
-          <div class="index-cell">
-            <h4>!00</h4>
-          </div>
-          <div class="index-cell">
-            <h4>portfolio</h4>
-          </div>
-          <div class="index-cell">
-            <h4>last update</h4>
-          </div>
-          <div class="index-cell">
-            <h4>jan 23</h4>
-          </div>
+
+    <!-- <Header /> -->
+
+
+    <div class="index-flex">
+      <template  v-for="(index, i) in index">
+        <p>portfolio</p>
+        <div class="index-flexm">
+          <template template v-if="index[4].portfolio === '1'">
+            <div>
+              <img :src="index[4].port.images[0].link" @click="goToLink(index[0].name)">
+            </div>
+          </template>
         </div>
-      </section>
-    </template>
-    <template  v-for="(index, i) in index">
-      <section>
-        <div class="index-col">
-          <div class="index-cell" @click="goToLink(index[3].link,index[0].name)">
-            <h4>{{getNumbers(index[5]+1)}}</h4>
-          </div>
-          <div class="index-cell" @click="goToLink(index[3].link,index[0].name)">
-            <h4>{{index[0].nameDesc}}</h4>
-          </div>
-          <div class="index-cell" @click="goToListDesc(index[3].link,index[1].desc,index[0].name)">
-            <h4>{{index[1].descDesc}}</h4>
-          </div>
-          <div class="index-cell" @click="goToListYear(index[3].link,index[2].year,index[0].name)">
-            <h4>{{index[2].yearDesc}}</h4>
-          </div>
-        </div>
-      </section>
-    </template>
-    <Footer />
+      </template>
+    </div>
+
+
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -48,31 +30,13 @@
   const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json')
   const index = JSON.parse(indexP.value)
   const router = useRouter()
+  const menu = ['portfolio','index','info','donate']
   index.forEach((item, i) => {
     index[i].push(i)
   })
   getRandomArray(index)
-  function goToPort() {
-    router.push({ path: "/portfolio" })
-  }
-  function goToLink(link,linkName) {
-    if (link == '0') {
-      void(0)
-    } else if (link == '1') {
-      window.location.href = '/portfolio/'+linkName
-    } else if (link == '2') {
-      window.location.href = '/work/'+linkName
-    } else if (link == '3') {
-      window.open(linkName, '_blank', 'noreferrer')
-    } else if (link == '4') {
-      window.location.href = linkName
-    }
-  }
-  function goToListDesc(link,desc,linkName) {
-    window.location.href = '/'+desc
-  }
-  function goToListYear(link,year,linkName) {
-    window.location.href = '/'+year
+  function goToLink(link) {
+    window.location.href = '/work/'+link
   }
   function getRandomArray(array) {
     let currentIndex = array.length,  randomIndex;
@@ -84,28 +48,38 @@
     }
     return array;
   }
-  function getNumbers(num, size) {
-    let s = ''
-    let numS = num.toString()
-    if (numS.length <= 1) {
-      s = '00' + numS
-    } else if (numS.length <= 2) {
-      s = '0' + numS
-    } else {
-      s = numS
-    }
-    return s
-  }
 </script>
 
 <style lang="scss">
-.index-col {
-  display: grid;
-  grid-template-columns: 7% 40% 30% 20%;
+.index-container {
+  width: 100%;
+}
+.index-flex {
+  position: absolute;
+  display: flex;
+  // top: 10%;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.index-flexm {
+  position: relative;
+  display: flex;
+  width: 20%;
+  flex-wrap: wrap;
+  gap: 20px;
+  img {
+    width: 100%;
+    filter: invert(1) blur(0);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      cursor: crosshair;
+      filter: invert(0) blur(0.4rem);
+    }
+  }
 }
 @media (max-width: 600px) {
-  .index-col {
-    grid-template-columns: 10% 35% 35% 20%;
-  } 
 }
 </style>

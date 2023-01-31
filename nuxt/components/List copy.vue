@@ -1,14 +1,26 @@
 <template>
   <div class="List-container">
     <div>
-      <h1 @click="goHome()">niklaus iff</h1>
+      <h1 @click="goHome()">{{listName}}</h1>
     </div>
   </div>
 </template>
 
 
 <script setup>
+  const route = useRoute()
   const router = useRouter()
+  let currentPath = route.path
+  let listName = ''
+  if (currentPath == '/') {
+    listName = 'niklaus iff'
+  } else if (currentPath.indexOf('/portfolio/') > -1) {
+    listName = 'niklaus iff'
+  } else if (currentPath.indexOf('/work/') > -1) {
+    listName = 'niklaus iff'
+  } else {
+    listName = currentPath.replace('/', '');
+  }
   function goHome() {
     router.push({ path: "/" })
   }
