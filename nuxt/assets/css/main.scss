@@ -54,6 +54,19 @@ h1 {
 		color: rgb(0,255,0);
 	}
 }
+h3 {
+	font-family: Plex;
+	font-size: 1.5vw;
+	display: inline;
+	margin: 0;
+	transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+	&:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
+}
 h4 {
 	font-family: Werk;
 	font-size: 1.5vw;

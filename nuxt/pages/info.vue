@@ -1,15 +1,15 @@
 <template>
-  <div class="index-container">
+  <div class="info-container">
     <NI />
-    <div class="index-flex">
+    <div class="info-flex">
       <template  v-for="(index, i) in index">
         <template  v-for="(index, e) in menu">
-          <template v-if="i < 6">
+          <template v-if="i < 5">
             <div>
               <h6 @click="goToPort()">{{menu[0]}}</h6>
             </div>
             <div>
-              <h6 @click="goToArchive()">{{menu[1]}}</h6>
+              <h6 @click="goToIndex()">{{menu[1]}}</h6>
             </div>
             <div>
               <h6 @click="goToInfo()">{{menu[2]}}</h6>
@@ -18,14 +18,12 @@
               <h6 @click="goToDonate()">{{menu[3]}}</h6>
             </div>
           </template>
+          <div>
+            <h6>{{info[0]}}</h6>
+            <h6>{{info[1]}}</h6>
+          </div>
         </template>
-        <div class="index-flexm">
-          <template template v-if="index[4].portfolio === '1'">
-            <div>
-              <img :src="index[4].port.images[0].link" @click="goToLink(index[0].name)">
-            </div>
-          </template>
-        </div>
+        
       </template>
     </div>
   </div>
@@ -38,15 +36,16 @@
   const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json')
   const index = JSON.parse(indexP.value)
   const router = useRouter()
-  const menu = ['portfolio','archive','info','donate']
+  const menu = ['portfolio','index','info','donate']
+  const info = ['admin@niklausiff.ch','copyleft']
   index.forEach((item, i) => {
     index[i].push(i)
   })
   function goToPort() {
     router.push({ path: "/portfolio" })
   }
-  function goToArchive() {
-    window.open('https://niklausiff.rip/', '_blank', 'noreferrer')
+  function goToIndex() {
+    router.push({ path: "/indexx" })
   }
   function goToInfo() {
     router.push({ path: "/info" })
@@ -56,7 +55,7 @@
   }
   getRandomArray(index)
   function goToLink(link) {
-    window.location.href = link
+    window.location.href = '/work/'+link
   }
   function getRandomArray(array) {
     let currentIndex = array.length,  randomIndex;
@@ -71,10 +70,10 @@
 </script>
 
 <style lang="scss">
-.index-container {
+.info-container {
   width: 100%;
 }
-.index-flex {
+.info-flex {
   position: absolute;
   display: flex;
   width: 100%;
@@ -82,7 +81,7 @@
   flex-wrap: wrap;
   z-index: 1;
 }
-.index-flexm {
+.info-flexm {
   position: relative;
   display: flex;
   width: 20%;

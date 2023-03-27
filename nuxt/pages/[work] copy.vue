@@ -6,7 +6,7 @@
   const col3Div = ref(null)
   const route = useRoute()
   let currentPath = route.path
-  const whichJSON = currentPath.slice(6)
+  const whichJSON = currentPath.slice(1)
   const pathToJSON = 'https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json'
   const {data: indexP } = await useFetch(pathToJSON)
   const indexAll = await JSON.parse(indexP.value)
@@ -86,17 +86,18 @@
             <div class="work-img" ref="col3Img">
               <img :src="index.images[i].link" :id="index.images[i].link"  @click="imgFull(index.images[i].link)">
             </div>
+            <!-- <template  v-for="(info, i) in index.info"> -->
+              <div class="work-col3-div" ref="col3Div">
+                <h3>{{index.info[i].t}}</h3>
+                <p>{{index.info[i].d}}</p>
+                <p>{{index.info[i].de}}</p>
+              </div>
+            <!-- </template> -->
           </template>
         </template>
       </div>
       <div class="work-col3">
-        <template  v-for="(info, i) in index.info">
-          <div class="work-col3-div" ref="col3Div">
-            <h3>{{index.info[i].t}}</h3>
-            <p>{{index.info[i].d}}</p>
-            <p>{{index.info[i].de}}</p>
-          </div>
-        </template>
+        
       </div>
     </div>
     <div class="work-col4">
@@ -132,14 +133,16 @@
 }
 .work-col2 {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 10%;
+  grid-auto-flow: column;
+  grid-gap: 6px;
   width: 100%;
-  gap: 6px;
   z-index: 1;
   img {
-    display: flex;
-    width: 50vw;
-    max-height: 90vh;
+    max-width: 100%;
+    max-height: 100%;
     cursor: crosshair;
   }
 }
