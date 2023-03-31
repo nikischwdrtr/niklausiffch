@@ -34,107 +34,111 @@
 	font-family: PlexMedium;
 	src: url("~/assets/fonts/IBMPlexMono-Medium.ttf");
 }
+@media (max-width: 600px) {
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+}
+body {
+	overflow-x: hidden;
+}
+iframe {
+	border: none;
+}
 p {
-	font-family: PlexLight;
-  font-size: 1.5vw;
-	font-weight: bold;
+	background-color: rgb(180,180,180);
 }
 a {
-	font-family: PlexLight;
-  font-size: 1.5vw;
-	text-decoration: none;
-	font-weight: bold;
-	color: black;
-	overflow: visible;
-	white-space: normal;
-	text-overflow: initial;
+	font-family: Werk;
+	font-size: large;
+	font-weight: 700;
+	background-color: rgb(180,180,180);
+	color: rgb(0,255,0);
+	margin: 0;
+	display: inline-block;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
 	&:hover {
 		cursor: pointer;
-		font-style: italic;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
 	}
 }
-h2 {
-	font-family: WerkLight;
-  font-size: 2.5vw;
+h1 {
 	margin: 0;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+	transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 	&:hover {
 		cursor: pointer;
+		filter: blur(0.4rem);
 		color: rgb(0,255,0);
 	}
 }
 h3 {
-	font-family: PlexLight;
-  font-size: 1.5vw;
-	font-style: italic;
-	font-weight: bold;
+	font-family: Werk;
+	font-size: large;
+	background-color: rgb(180,180,180);
+	color: rgb(0,255,0);
+	margin: 0;
+	width: fit-content;
+	display: block;
+	transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+	&:hover {
+		cursor: not-allowed;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
 }
 h4 {
-	font-family: WerkLight;
-  font-size: 2.5vw;
 	margin: 0;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+	transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 	&:hover {
 		cursor: pointer;
+		filter: blur(0.4rem);
 		color: rgb(0,255,0);
 	}
 }
 h5 {
-  font-family: WerkHeavy;
-  font-size: 35vw;
-  text-align: center;
-	margin-block: auto;
-	margin-inline: auto;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+	font-family: Werk;
+	font-size: large;
+	background-color: rgb(180,180,180);
+	margin: 0;
+	margin-left: 10px;
+	display: inline-block;
+	transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+	&:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
 }
 h6 {
-  font-family: WerkHeavy;
-  font-size: 10vw;
-  text-align: center;
-	margin-block: auto;
-	margin-inline: auto;
-	color: rgb(0,255,0);
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.work-links {
-	color: blue;
-}
-.other-links {
-	color: blue;
+	font-family: Werk;
+	font-size: x-large;
+	background-color: rgb(180,180,180);
+	margin: 0;
+	display: inline-block;
+	transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+	&:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
 }
 @media (max-width: 600px) {
-	p {
-		font-size: 3vw;
-	}
 	a {
-		font-size: 3vw;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-	}
-	h2 {
-		font-size: 4vw;
+		font-size: medium;
 	}
 	h3 {
-		font-size: 1.5vw;
-	}
-	h4 {
-		font-size: 4vw;
+		font-size: small;
 	}
 	h5 {
-		font-size: 35vw;
+		font-size: small;
 	}
 	h6 {
-		font-size: 15vw;
+		font-size: x-large;
 	}
-}
-@media (min-width: 600px) and (max-width: 1200px) {
 }
