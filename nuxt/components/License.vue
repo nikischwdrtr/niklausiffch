@@ -49,5 +49,10 @@
   }
 }
 @media (max-width: 600px) {
+  .License-container {
+    h6 {
+      font-size: medium !important;
+    }
+  }
 }
 </style>
