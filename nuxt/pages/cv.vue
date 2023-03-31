@@ -1,7 +1,7 @@
 <template>
   <div class="index-container">
     <Menu />
-    <Info />
+    <CV />
   </div>
 </template>
 

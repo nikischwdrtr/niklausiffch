@@ -41,11 +41,30 @@
 body {
 	overflow-x: hidden;
 }
-h1 {
+iframe {
+	border: none;
+}
+p {
+	background-color: rgb(180,180,180);
+}
+a {
 	font-family: Werk;
-	font-size: 4vw;
+	font-size: large;
+	font-weight: 700;
+	background-color: rgb(180,180,180);
+	color: rgb(0,255,0);
 	margin: 0;
-	display:inline-block; 
+	display: inline-block;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	&:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
+}
+h1 {
+	margin: 0;
 	transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 	&:hover {
@@ -55,22 +74,22 @@ h1 {
 	}
 }
 h3 {
-	font-family: Plex;
-	font-size: 1.5vw;
-	display: inline;
+	font-family: Werk;
+	font-size: large;
+	background-color: rgb(180,180,180);
+	color: rgb(0,255,0);
 	margin: 0;
+	width: fit-content;
+	display: block;
 	transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 	&:hover {
-		cursor: pointer;
+		cursor: not-allowed;
 		filter: blur(0.4rem);
 		color: rgb(0,255,0);
 	}
 }
 h4 {
-	font-family: Werk;
-	font-size: 1.5vw;
-	display: inline;
 	margin: 0;
 	transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -82,26 +101,44 @@ h4 {
 }
 h5 {
 	font-family: Werk;
-	font-size: 1.5vw;
-	color: rgb(0,255,0);
+	font-size: large;
+	background-color: rgb(180,180,180);
 	margin: 0;
-	transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-	&:hover {
-		cursor: pointer;
-		filter: blur(0.4rem);
-	}
-}
-h6 {
-	font-family: Werk;
-	font-size: 2vw;
-	margin: 0;
-	display:inline-block; 
+	margin-left: 10px;
+	display: inline-block;
 	transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 	&:hover {
 		cursor: pointer;
 		filter: blur(0.4rem);
 		color: rgb(0,255,0);
+	}
+}
+h6 {
+	font-family: Werk;
+	font-size: x-large;
+	background-color: rgb(180,180,180);
+	margin: 0;
+	display: inline-block;
+	transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+	&:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
+}
+@media (max-width: 600px) {
+	a {
+		font-size: medium;
+	}
+	h3 {
+		font-size: small;
+	}
+	h5 {
+		font-size: small;
+	}
+	h6 {
+		font-size: x-large;
 	}
 }

@@ -1,33 +1,7 @@
 <template>
   <div class="index-container">
-    <NI />
-    <div class="index-flex">
-      <template  v-for="(index, i) in index">
-        <template  v-for="(index, e) in menu">
-          <template v-if="i < 6">
-            <div>
-              <h6 @click="goToPort()">{{menu[0]}}</h6>
-            </div>
-            <div>
-              <h6 @click="goToArchive()">{{menu[1]}}</h6>
-            </div>
-            <div>
-              <h6 @click="goToInfo()">{{menu[2]}}</h6>
-            </div>
-            <div>
-              <h6 @click="goToDonate()">{{menu[3]}}</h6>
-            </div>
-          </template>
-        </template>
-        <div class="index-flexm">
-          <template template v-if="index[4].portfolio === '1'">
-            <div>
-              <img :src="index[4].port.images[0].link" @click="goToLink(index[0].name)">
-            </div>
-          </template>
-        </div>
-      </template>
-    </div>
+    <Menu />
+    <Images />
   </div>
 </template>
 
@@ -35,69 +9,12 @@
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
   console.log('♕ niki is king ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
-  const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/index.json')
-  const index = JSON.parse(indexP.value)
-  const router = useRouter()
-  const menu = ['portfolio','archive','info','donate']
-  index.forEach((item, i) => {
-    index[i].push(i)
-  })
-  function goToPort() {
-    router.push({ path: "/portfolio" })
-  }
-  function goToArchive() {
-    window.open('https://niklausiff.rip/', '_blank', 'noreferrer')
-  }
-  function goToInfo() {
-    router.push({ path: "/info" })
-  }
-  function goToDonate() {
-    window.open('https://www.paypal.com/donate/?hosted_button_id=CRUUEFRRP2G78', '_blank', 'noreferrer')
-  }
-  getRandomArray(index)
-  function goToLink(link) {
-    window.location.href = link
-  }
-  function getRandomArray(array) {
-    let currentIndex = array.length,  randomIndex;
-    while (currentIndex != 0) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
-    }
-    return array;
-  }
 </script>
 
 <style lang="scss">
 .index-container {
   width: 100%;
-}
-.index-flex {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  z-index: 1;
-}
-.index-flexm {
-  position: relative;
-  display: flex;
-  width: 20%;
-  flex-wrap: wrap;
-  gap: 20px;
-  img {
-    width: 100%;
-    filter: invert(1) blur(0);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    &:hover {
-      cursor: crosshair;
-      filter: invert(0) blur(0.4rem);
-    }
-  }
+  overflow-x: hidden;
 }
 @media (max-width: 600px) {
 }
