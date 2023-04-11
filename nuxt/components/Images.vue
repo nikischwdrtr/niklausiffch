@@ -3,7 +3,12 @@
     <template  v-for="(index,i) in index">
       <template v-if="index[4].portfolio === '1'">
         <div class="Images-desc">
-          <h6 :id="'work'+i">{{index[0].nameDesc}}</h6>
+          <div>
+            <h6 :id="'work'+i">{{index[0].nameDesc}}</h6>
+          </div>
+          <div v-if="index[4].port.wip == 'true'">
+            <h4>wip</h4>
+          </div>
           <h5 v-if="!!index[4].port.txt">{{index[4].port.txt}}</h5>
           <div>
             <a @click="goToLink(index[4].port.links[0].href)">{{index[4].port.links[0].name}}</a>
