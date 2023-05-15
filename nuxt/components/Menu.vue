@@ -1,11 +1,8 @@
 <template>
   <div class="Menu-container">
-    <div id="Menu-btn">
-      <h6 @click="goToPort()" :style="{marginBottom: '20px'}">niklaus iff</h6>
-    </div>
     <div id="Menu-menu">
       <div>
-        <h6 @click="goToPort()" :style="{marginBottom: '20px'}">niklaus iff</h6>
+        <h6 @click="goToPort()">niklaus iff</h6>
       </div>
       <template v-for="(index, i) in index">
         <template v-if="index[4].portfolio === '1'">
@@ -15,13 +12,13 @@
         </template>
       </template>
       <div>
-        <h6 @click="goToCV()" :style="{marginTop: '20px'}">{{menu[4]}}</h6>
+        <h6 @click="goToCV()">{{menu[4]}}</h6>
       </div>
       <div>
         <h6 @click="goToArchive()">{{menu[1]}}</h6>
       </div>
       <div>
-        <h6 @click="writeMail()" :style="{marginBottom: '20px'}">admin@niklausiff.ch</h6>
+        <h6 @click="writeMail()">admin@niklausiff.ch</h6>
       </div>
       <div>
         <h5 @click="goToLicense()">copyleft</h5>
@@ -36,14 +33,14 @@
         <h5 @click="goToInstagram()">instagram</h5>
       </div>
       <div>
-        <h5 @click="goToSoundcloud()" :style="{marginBottom: '20px'}">soundcloud</h5>
+        <h5 @click="goToSoundcloud()">soundcloud</h5>
       </div>
       <div>
         <h6 @click="goToDonate()" :style="{color: 'rgb(0,255,0)'}">{{menu[3]}}</h6>
       </div>
-      <div class="Menu-bio" :style="{marginTop: '20px'}">
+      <!-- <div class="Menu-bio" :style="{marginTop: '20px'}">
         <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</h5>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -66,9 +63,6 @@
   }
   function goToPort() {
     router.push({ path: "/" })
-    if (window.innerWidth <= 600) {
-      
-    }
   }
   function goToWork(name) {
     router.push({path: "/"+name})
@@ -123,9 +117,6 @@
   }
   .Menu-bio {
     display: none;
-  }
-  #Menu-btn {
-    display: initial;
   }
 }
 </style>

@@ -1,13 +1,16 @@
 <template>
   <div class="Work-container">
+    <div class="Work-back">
+      <p @click="goToPort()">←</p>
+    </div>
     <template  v-for="(index,i) in indexNew">
       <template v-if="index[4].portfolio === '1'">
         <div class="Work-desc">
           <div>
             <h6 :id="'work'+i">{{index[0].nameDesc}}</h6>
           </div>
-          <h5 v-if="!!index[4].port.txt" :style="{marginTop: '20px'}">{{index[4].port.txt}}</h5>
-          <a :style="{marginTop: '20px'}">{{index[1].descDesc}}, {{index[2].yearDesc}}</a>
+          <h5 v-if="!!index[4].port.txt">{{index[4].port.txt}}</h5>
+          <a>{{index[1].descDesc}}, {{index[2].yearDesc}}</a>
           <div>
             <a @click="goToLink(index[4].port.links[0].href)" :style="{textDecoration: 'underline'}">{{index[4].port.links[0].name}}</a>
           </div>
@@ -50,6 +53,9 @@
       indexNew.push(item)
     }
   })
+  function goToPort() {
+    router.push({ path: "/" })
+  }
   function imgFull(link,info) {
     t.value = info.t
     d.value = info.d
@@ -170,37 +176,8 @@
   }
 }
 @media (max-width: 600px) {
-  .work-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 10px;
-    div {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 5px;
-      img {
-        margin: 20px;
-        width: 100%;
-        height: auto;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
-        &:hover {
-          cursor: crosshair;
-          filter: blur(0.4rem);
-        }
-      }
-      iframe {
-        margin: 20px;
-      }
-    }
-    .work-desc {
-      width: 100% !important;
-    }
+  .Work-container {
+    width: 98%;
   }
 }
 </style>

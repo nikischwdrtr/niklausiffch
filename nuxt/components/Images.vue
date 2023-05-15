@@ -6,7 +6,7 @@
           <div>
             <h6 :id="'work'+i" @click="goToWork(index[0].name)">{{index[0].nameDesc}}</h6>
           </div>
-          <a :style="{marginLeft: '10px',marginTop: '20px',marginBottom: '20px'}" @click="goToWork(index[0].name)">{{index[1].descDesc}}, {{index[2].yearDesc}}</a>
+          <a :style="{marginLeft: '10px',marginBottom: '20px'}" @click="goToWork(index[0].name)">{{index[1].descDesc}}, {{index[2].yearDesc}}</a>
         </div>
         <div :id="'img'+i">
           <template v-for="(img,i) in index[4].port.images">

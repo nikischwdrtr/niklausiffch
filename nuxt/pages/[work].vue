@@ -1,6 +1,6 @@
 <template>
-  <div class="index-container">
-    <Menu />
+  <div class="work1-container">
+    <Menu class="work1-menu" />
     <Work />
   </div>
 </template>
@@ -12,10 +12,16 @@
 </script>
 
 <style lang="scss">
-.index-container {
+.work1-container {
   width: 100%;
   overflow-x: hidden;
 }
+.work1-menu {
+  display: flex;
+}
 @media (max-width: 600px) {
+  .work1-menu {
+    display: none;
+  }
 }
 </style>
