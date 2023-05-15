@@ -1,5 +1,5 @@
 <template>
-  <div class="index-container">
+  <div class="cv-container">
     <Menu />
     <CV />
   </div>
@@ -12,7 +12,7 @@
 </script>
 
 <style lang="scss">
-.index-container {
+.cv-container {
   width: 100%;
   overflow-x: hidden;
 }

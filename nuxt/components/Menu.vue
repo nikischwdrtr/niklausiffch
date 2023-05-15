@@ -1,30 +1,27 @@
 <template>
   <div class="Menu-container">
-    <div @click="openMenu()" id="Menu-mobile-menu">
-      <h6>Menu</h6>
+    <div id="Menu-btn">
+      <h6 @click="goToPort()" :style="{marginBottom: '20px'}">niklaus iff</h6>
     </div>
     <div id="Menu-menu">
       <div>
-        <h6 @click="goToPort()">{{menu[0]}}</h6>
+        <h6 @click="goToPort()" :style="{marginBottom: '20px'}">niklaus iff</h6>
       </div>
       <template v-for="(index, i) in index">
         <template v-if="index[4].portfolio === '1'">
           <div>
-            <h5 @click="goToWork(i)">{{index[4].port.name}}</h5>
+            <h5 @click="goToWork(index[0].name)">{{index[4].port.name}} <i :style="{color:'rgb(0,255,0)',fontStyle:'normal'}">{{index[1].descDesc}}, {{index[2].yearDesc}}</i></h5>
           </div>
         </template>
       </template>
       <div>
-        <h6 @click="goToCV()">{{menu[4]}}</h6>
+        <h6 @click="goToCV()" :style="{marginTop: '20px'}">{{menu[4]}}</h6>
       </div>
       <div>
         <h6 @click="goToArchive()">{{menu[1]}}</h6>
       </div>
       <div>
-        <h6 @click="writeMail()">admin@niklausiff.ch</h6>
-      </div>
-      <div>
-        <h6 @click="goToInfo()">info</h6>
+        <h6 @click="writeMail()" :style="{marginBottom: '20px'}">admin@niklausiff.ch</h6>
       </div>
       <div>
         <h5 @click="goToLicense()">copyleft</h5>
@@ -39,10 +36,13 @@
         <h5 @click="goToInstagram()">instagram</h5>
       </div>
       <div>
-        <h5 @click="goToSoundcloud()">soundcloud</h5>
+        <h5 @click="goToSoundcloud()" :style="{marginBottom: '20px'}">soundcloud</h5>
       </div>
       <div>
-        <h6 @click="goToDonate()">{{menu[3]}}</h6>
+        <h6 @click="goToDonate()" :style="{color: 'rgb(0,255,0)'}">{{menu[3]}}</h6>
+      </div>
+      <div class="Menu-bio" :style="{marginTop: '20px'}">
+        <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</h5>
       </div>
     </div>
   </div>
@@ -66,25 +66,12 @@
   }
   function goToPort() {
     router.push({ path: "/" })
-  }
-  function goToWork(i) {
-    let x,y
-    let work = document.getElementById('work'+i)
-    if (work==null) {
-      router.push({ path: "/" })
-      setTimeout(() => {
-        let newWork = document.getElementById('work'+i)
-        let workBound = newWork.getBoundingClientRect()
-        x = workBound.left+window.scrollX
-        y = workBound.top+window.scrollY
-        window.scrollTo(x, y)
-      }, "200")
-    } else {
-      let workBound = work.getBoundingClientRect()
-      x = workBound.left+window.scrollX
-      y = workBound.top+window.scrollY
-      window.scrollTo(x, y)
+    if (window.innerWidth <= 600) {
+      
     }
+  }
+  function goToWork(name) {
+    router.push({path: "/"+name})
   }
   function goToCV() {
     router.push({ path: "/cv" })
@@ -121,27 +108,24 @@
 <style lang="scss">
 .Menu-container {
   position: fixed;
+  width: 30%;
 }
-#Menu-mobile-menu {
+.Menu-bio {
+  display: inline-block;
+}
+#Menu-btn {
   display: none;
+  position: fixed;
 }
 @media (max-width: 600px) {
-  #Menu-menu {
-    display: none;
-    h6 {
-      font-size: x-large;
-    }
-    h5 {
-      font-size: large;
-    }
+  .Menu-container {
+    width: 94%;
   }
-  #Menu-mobile-menu {
+  .Menu-bio {
+    display: none;
+  }
+  #Menu-btn {
     display: initial;
-    color: rgb(0,255,0);
-    margin-left: 20px;
-    h6 {
-      font-size: x-large;
-    }
   }
 }
 </style>

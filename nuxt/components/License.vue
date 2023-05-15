@@ -2,8 +2,8 @@
   <div class="License-container">
     <div>
       <h6>MIT License</h6>
-      <h6>Copyright (c) 2022 niklaus</h6>
-      <h6 style="margin-left:20px;width:101%">
+      <h6 :style="{color: 'rgb(0,255,0)'}">Copyright (c) 2022 niklaus</h6>
+      <h6>
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files (the "Software"), to deal
         in the Software without restriction, including without limitation the rights
@@ -15,7 +15,7 @@
         The above copyright notice and this permission notice shall be included in all
         copies or substantial portions of the Software.
       </h6>
-      <h6 style="margin-left:-20px;width:99%">
+      <h6>
         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -39,13 +39,14 @@
 
 <style lang="scss">
 .License-container {
-  width: 100%;
+  position: absolute;
+  width: 60%;
+  right: 1%;
   div {
     position: absolute;
-    width: 40%;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%,0);
+  }
+  h6 {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 600px) {

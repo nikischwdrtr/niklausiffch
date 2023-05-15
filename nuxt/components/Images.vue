@@ -4,35 +4,24 @@
       <template v-if="index[4].portfolio === '1'">
         <div class="Images-desc">
           <div>
-            <h6 :id="'work'+i">{{index[0].nameDesc}}</h6>
+            <h6 :id="'work'+i" @click="goToWork(index[0].name)">{{index[0].nameDesc}}</h6>
           </div>
-          <div v-if="index[4].port.wip == 'true'">
-            <h4>wip</h4>
-          </div>
-          <h5 v-if="!!index[4].port.txt">{{index[4].port.txt}}</h5>
-          <div>
-            <a @click="goToLink(index[4].port.links[0].href)">{{index[4].port.links[0].name}}</a>
-          </div>
+          <a :style="{marginLeft: '10px',marginTop: '20px',marginBottom: '20px'}" @click="goToWork(index[0].name)">{{index[1].descDesc}}, {{index[2].yearDesc}}</a>
         </div>
-        <div>
+        <div :id="'img'+i">
           <template v-for="(img,i) in index[4].port.images">
+            <template v-if="i < 1">
             <template v-if="img.ifr === '0'">
-              <img @click="imgFull(img.link,index[4].port.info[i])" :src="img.link">
+              <img @click="goToWork(index[0].name)" :src="img.link">
             </template>
             <template v-if="img.ifr === '1'">
-               <iframe :src="img.link" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> 
+               <div class="embed-container"><iframe :src="img.link" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div> 
+            </template>
             </template>
           </template>
         </div>
       </template>
     </template>
-    <div id="images-imgFull-div" @click="imgClose()"></div>
-    <img id="images-imgFull" src="" @click="imgClose()">
-    <div id="images-imgFull-txt" @click="imgClose()">
-      <h3>{{t}}</h3>
-      <h3 style="margin-left:10px;">{{d}}</h3>
-      <h3 style="margin-left:-10px;">{{de}}</h3>
-    </div>
   </div>
 </template>
 
@@ -43,29 +32,11 @@
   const t = ref('')
   const d = ref('')
   const de = ref('')
-  // let t,d,de = ''
   index.forEach((item, i) => {
     index[i].push(i)
   })
-  function imgFull(link,info) {
-    t.value = info.t
-    d.value = info.d
-    de.value = info.de
-    let img = document.getElementById('images-imgFull')
-    let bg = document.getElementById('images-imgFull-div')
-    let txt = document.getElementById('images-imgFull-txt')
-    img.src = link
-    img.style.transform = 'translate(-50%,-50%) scale(1)'
-    bg.style.display = 'initial'
-    txt.style.opacity = '1'
-  }
-  function imgClose() {
-    let img = document.getElementById('images-imgFull')
-    let bg = document.getElementById('images-imgFull-div')
-    let txt = document.getElementById('images-imgFull-txt')
-    img.style.transform = 'translate(-50%,-50%) scale(0)'
-    bg.style.display = 'none'
-    txt.style.opacity = '0'
+  function goToWork(name) {
+    router.push({path: "/"+name})
   }
   function goToLink(href) {
     window.open(href, '_blank', 'noreferrer')
@@ -74,24 +45,23 @@
 
 <style lang="scss">
 .Images-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 10px;
+  position: absolute;
+  display: initial;
+  width: 60%;
+  right: 1%;
   div {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
     gap: 5px;
     img {
-      margin: 20px;
-      width: 60%;
+      width: 100%;
       height: auto;
       transition-duration: 0.2s;
       transition-timing-function: ease-in-out;
+      margin-top: 10px;
+      margin-bottom: 20px;
       &:hover {
         cursor: crosshair;
 		    filter: blur(0.4rem);
@@ -102,94 +72,39 @@
     }
   }
   .Images-desc {
-    width: 70%;
+    width: 100%;
     display: block;
-    text-align: right;
+    text-align: left;
     h5 {
-      margin-right: 10px;
+      margin-left: 10px;
       text-align: left;
     }
     div {
-      text-align: right;
+      text-align: left;
       display: inline-block;
     }
   }
-  #images-imgFull-div {
-    position: fixed;
-    display: none;
-    left: 0;
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .embed-container iframe,.embed-container object,.embed-container embed { 
+    position: absolute;
     top: 0;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(10px);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    z-index: 29;
-    &:hover {
-      cursor: crosshair;
-    }
-  }
-  #images-imgFull {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: scale(0);
-    transform: translate(-50%,-50%) scale(0);
-    max-width: 98vw;
-    max-height: 98vh;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    z-index: 30;
-    &:hover {
-      cursor: crosshair;
-    }
-  }
-  #images-imgFull-txt {
-    bottom: 2%;
-    left: 6%;
-    opacity: 0;
-    display: block;
-    position: fixed;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    z-index: 31;
-    &:hover {
-      cursor: crosshair;
-    }
+    left: 0;
+    width: 100%;
+    height: 100%; 
   }
 }
 @media (max-width: 600px) {
   .Images-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    display: none;
+    width: 98%;
     gap: 10px;
-    div {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 5px;
-      img {
-        margin: 20px;
-        width: 100%;
-        height: auto;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
-        &:hover {
-          cursor: crosshair;
-          filter: blur(0.4rem);
-        }
-      }
-      iframe {
-        margin: 20px;
-      }
-    }
-    .Images-desc {
-      width: 100% !important;
-    }
   }
 }
 </style>
