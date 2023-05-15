@@ -1,6 +1,6 @@
 <template>
   <div class="cv-container">
-    <Menu />
+    <Menu class="cv-menu" />
     <CV />
   </div>
 </template>
@@ -16,6 +16,12 @@
   width: 100%;
   overflow-x: hidden;
 }
+.cv-menu {
+  display: flex;
+}
 @media (max-width: 600px) {
+  .cv-menu {
+    display: none;
+  }
 }
 </style>

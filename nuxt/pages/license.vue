@@ -1,6 +1,6 @@
 <template>
-  <div class="index-container">
-    <Menu />
+  <div class="license-container">
+    <Menu class="license-menu" />
     <License />
   </div>
 </template>
@@ -12,10 +12,16 @@
 </script>
 
 <style lang="scss">
-.index-container {
+.license-container {
   width: 100%;
   overflow-x: hidden;
 }
+.flex-menu {
+  display: none;
+}
 @media (max-width: 600px) {
+  .license-menu {
+    display: none;
+  }
 }
 </style>
