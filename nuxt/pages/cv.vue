@@ -7,7 +7,7 @@
 
 <script setup>
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
-  console.log('♕ niki is king ♕')
+  console.log('♕ niki is queen ♕')
   console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
 </script>
 
