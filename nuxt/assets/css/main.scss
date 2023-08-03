@@ -1,0 +1,99 @@
+@font-face {
+	font-family: WerkBold;
+	src: url("~/assets/fonts/WerkNeue-Bold.woff");
+}
+@font-face {
+	font-family: WerkExtraBold;
+	src: url("~/assets/fonts/WerkNeue-ExtraBold.woff");
+}
+@font-face {
+	font-family: WerkHeavy;
+	src: url("~/assets/fonts/WerkNeue-Heavy.woff");
+}
+@font-face {
+	font-family: WerkLight;
+	src: url("~/assets/fonts/WerkNeue-Light.woff");
+}
+@font-face {
+	font-family: WerkMedium;
+	src: url("~/assets/fonts/WerkNeue-Medium.woff");
+}
+@font-face {
+	font-family: WerkRegular;
+	src: url("~/assets/fonts/WerkNeue-Regular.woff");
+}
+@font-face {
+	font-family: IBMRegular;
+	src: url("~/assets/fonts/IBMPlexMono-Regular.ttf");
+}
+@font-face {
+	font-family: IBMLight;
+	src: url("~/assets/fonts/IBMPlexMono-Light.ttf");
+}
+@font-face {
+	font-family: IBMBold;
+	src: url("~/assets/fonts/IBMPlexMono-Bold.ttf");
+}
+body{
+	overflow-x: hidden;
+  word-break: break-all;
+}
+h1 {
+  font-family: WerkHeavy;
+  font-size: 6vw;
+  margin: 0;
+	display: inline-block;
+  filter: blur(0.1rem);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
+}
+h2 {
+  font-family: WerkHeavy;
+  font-size: 3vw;
+  margin: 0;
+	display: inline-block;
+  filter: blur(0.1rem);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
+}
+p {
+  font-family: WerkHeavy;
+  font-size: 6vw;
+  margin: 0;
+	display: inline-block;
+  filter: blur(0.1rem);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+    color: rgb(0,255,0);
+    filter: blur(0.15rem);
+  }
+  h2 {
+    font-size: 4vw;
+    color: rgb(0,255,0);
+    filter: blur(0.15rem);
+  }
+  p {
+    font-size: 8vw;
+    color: rgb(0,255,0);
+    filter: blur(0.15rem);
+  }
+}
