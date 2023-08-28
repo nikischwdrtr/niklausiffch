@@ -1,28 +1,4 @@
 @font-face {
-	font-family: WerkBold;
-	src: url("~/assets/fonts/WerkNeue-Bold.woff");
-}
-@font-face {
-	font-family: WerkExtraBold;
-	src: url("~/assets/fonts/WerkNeue-ExtraBold.woff");
-}
-@font-face {
-	font-family: WerkHeavy;
-	src: url("~/assets/fonts/WerkNeue-Heavy.woff");
-}
-@font-face {
-	font-family: WerkLight;
-	src: url("~/assets/fonts/WerkNeue-Light.woff");
-}
-@font-face {
-	font-family: WerkMedium;
-	src: url("~/assets/fonts/WerkNeue-Medium.woff");
-}
-@font-face {
-	font-family: WerkRegular;
-	src: url("~/assets/fonts/WerkNeue-Regular.woff");
-}
-@font-face {
 	font-family: IBMRegular;
 	src: url("~/assets/fonts/IBMPlexMono-Regular.ttf");
 }
@@ -35,15 +11,26 @@
 	src: url("~/assets/fonts/IBMPlexMono-Bold.ttf");
 }
 body{
-	overflow-x: hidden;
-  word-break: break-all;
+	overflow: hidden;
+  margin: 0;
 }
 h1 {
-  font-family: WerkHeavy;
-  font-size: 6vw;
   margin: 0;
-	display: inline-block;
-  filter: blur(0.1rem);
+  margin-top: 20px;
+  font-family: IBMLight,'Courier New', Courier, monospace;
+  font-weight: initial;
+  color: rgb(0,255,0);
+  font-size: 1vw;
+  display: block;
+}
+h2 {
+  margin: 0;
+  margin-top: 20px;
+  font-family: IBMLight,'Courier New', Courier, monospace;
+  font-weight: initial;
+  color: rgb(180,180,180);
+  font-size: 1vw;
+  display: block;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   &:hover {
@@ -52,12 +39,11 @@ h1 {
 		color: rgb(0,255,0);
 	}
 }
-h2 {
-  font-family: WerkHeavy;
-  font-size: 3vw;
-  margin: 0;
-	display: inline-block;
-  filter: blur(0.1rem);
+h3 {
+  font-family: IBMLight,'Courier New', Courier, monospace;
+  color: rgb(0,255,0);
+  font-weight: initial;
+  font-size: 1vw;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   &:hover {
@@ -67,11 +53,10 @@ h2 {
 	}
 }
 p {
-  font-family: WerkHeavy;
-  font-size: 6vw;
-  margin: 0;
-	display: inline-block;
-  filter: blur(0.1rem);
+  font-family: IBMLight,'Courier New', Courier, monospace;
+  color: rgb(180,180,180);
+  font-size: 1vw;
+  display: inline;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   &:hover {
@@ -80,20 +65,30 @@ p {
 		color: rgb(0,255,0);
 	}
 }
+a {
+  font-family: IBMLight,'Courier New', Courier, monospace;
+  color: rgb(0,255,0);
+  font-size: 1vw;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
+}
+pre {
+  font-family: IBMLight,'Courier New', Courier, monospace;
+  color: rgb(180,180,180);
+  font-size: 1vw;
+  width: fit-content;
+}
 @media (max-width: 600px) {
-  h1 {
-    font-size: 8vw;
-    color: rgb(0,255,0);
-    filter: blur(0.15rem);
+  a,p,pre {
+    font-size: 1.9vw;
   }
-  h2 {
-    font-size: 4vw;
-    color: rgb(0,255,0);
-    filter: blur(0.15rem);
-  }
-  p {
-    font-size: 8vw;
-    color: rgb(0,255,0);
-    filter: blur(0.15rem);
+  h1,h2,h3 {
+    font-size: 3vw;
+    margin-top: 10px;
   }
 }
