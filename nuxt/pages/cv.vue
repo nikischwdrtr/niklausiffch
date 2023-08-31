@@ -36,7 +36,7 @@
   function goHome() {
     router.push({ path: "/" })
   }
-  function goToCTM() {c
+  function goToCTM() {
     window.open('https://www.instagram.com/p/Cv_3yilNo2A/?img_index=1', '_blank', 'noreferrer')
   }
   function goToAIF() {
