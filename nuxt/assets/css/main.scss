@@ -1,36 +1,32 @@
-@font-face {
-	font-family: IBMRegular;
-	src: url("~/assets/fonts/IBMPlexMono-Regular.ttf");
-}
-@font-face {
-	font-family: IBMLight;
-	src: url("~/assets/fonts/IBMPlexMono-Light.ttf");
-}
-@font-face {
-	font-family: IBMBold;
-	src: url("~/assets/fonts/IBMPlexMono-Bold.ttf");
-}
 body{
 	overflow: hidden;
   margin: 0;
 }
 h1 {
-  margin: 0;
-  margin-top: 20px;
-  font-family: IBMLight,'Courier New', Courier, monospace;
-  font-weight: initial;
-  color: rgb(0,255,0);
-  font-size: 1vw;
-  display: block;
+  display: inline;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
+  -webkit-text-stroke: 0.4pt rgb(0,255,0);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+		cursor: pointer;
+		filter: blur(0.4rem);
+		color: rgb(0,255,0);
+	}
 }
 h2 {
-  margin: 0;
-  margin-top: 20px;
-  font-family: IBMLight,'Courier New', Courier, monospace;
-  font-weight: initial;
-  color: rgb(180,180,180);
-  font-size: 1vw;
-  display: block;
+  display: inline-block;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
+  overflow-wrap: anywhere;
+  width: fit-content;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   &:hover {
@@ -40,10 +36,24 @@ h2 {
 	}
 }
 h3 {
-  font-family: IBMLight,'Courier New', Courier, monospace;
+  display: inline;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
+  overflow-wrap: anywhere;
+}
+a {
+  display: inline;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
+  font-style: italic;
+  overflow-wrap: anywhere;
   color: rgb(0,255,0);
-  font-weight: initial;
-  font-size: 1vw;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   &:hover {
@@ -53,42 +63,12 @@ h3 {
 	}
 }
 p {
-  font-family: IBMLight,'Courier New', Courier, monospace;
-  color: rgb(180,180,180);
-  font-size: 1vw;
   display: inline;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  &:hover {
-		cursor: pointer;
-		filter: blur(0.4rem);
-		color: rgb(0,255,0);
-	}
-}
-a {
-  font-family: IBMLight,'Courier New', Courier, monospace;
-  color: rgb(0,255,0);
-  font-size: 1vw;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  &:hover {
-		cursor: pointer;
-		filter: blur(0.4rem);
-		color: rgb(0,255,0);
-	}
-}
-pre {
-  font-family: IBMLight,'Courier New', Courier, monospace;
-  color: rgb(180,180,180);
-  font-size: 1vw;
-  width: fit-content;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
 }
 @media (max-width: 600px) {
-  a,p,pre {
-    font-size: 1.9vw;
-  }
-  h1,h2,h3 {
-    font-size: 3vw;
-    margin-top: 10px;
-  }
 }

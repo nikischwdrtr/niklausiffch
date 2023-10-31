@@ -9,6 +9,11 @@ export default defineNuxtConfig({
   },
   modules: [
   ],
+  runtimeConfig: {
+    public: {
+      wordpressUrl: 'http://niklausiffchwp.local/graphql'
+    }
+  },
   css: [
     '~/assets/css/main.scss',
   ],
