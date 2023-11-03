@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@vueuse/nuxt',
+    '@nuxt/content',
+    '@pinia/nuxt',
   ],
   css: [
     '~/assets/css/main.scss',

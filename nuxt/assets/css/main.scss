@@ -1,151 +1,83 @@
-@font-face {
-	font-family: WerkBold;
-	src: url("~/assets/fonts/WerkNeue-Bold.woff");
-}
-@font-face {
-	font-family: WerkExtraBold;
-	src: url("~/assets/fonts/WerkNeue-ExtraBold.woff");
-}
-@font-face {
-	font-family: WerkHeavy;
-	src: url("~/assets/fonts/WerkNeue-Heavy.woff");
-}
-@font-face {
-	font-family: WerkLight;
-	src: url("~/assets/fonts/WerkNeue-Light.woff");
-}
-@font-face {
-	font-family: WerkMedium;
-	src: url("~/assets/fonts/WerkNeue-Medium.woff");
-}
-@font-face {
-	font-family: Werk;
-	src: url("~/assets/fonts/WerkNeue-Regular.woff");
-}
-@font-face {
-	font-family: Plex;
-	src: url("~/assets/fonts/IBMPlexMono-Regular.ttf");
-}
-@font-face {
-	font-family: PlexLight;
-	src: url("~/assets/fonts/IBMPlexMono-Light.ttf");
-}
-@font-face {
-	font-family: PlexMedium;
-	src: url("~/assets/fonts/IBMPlexMono-Medium.ttf");
-}
-@media (max-width: 600px) {
-}
-@media (min-width: 600px) and (max-width: 1200px) {
-}
-body {
+body{
 	overflow-x: hidden;
+  margin: 15px;
 }
-iframe {
-	border: none;
-}
-p {
-	background-color: rgb(180,180,180);
-}
-a {
-	font-family: Werk;
-	font-size: large;
-	font-weight: 700;
-	background-color: rgb(180,180,180);
-	color: rgb(0,255,0);
-	margin: 0;
-	display: inline-block;
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
-	&:hover {
+h1 {
+  display: inline;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
+  -webkit-text-stroke: 0.4pt rgb(0,255,0);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
 		cursor: pointer;
 		filter: blur(0.4rem);
 		color: rgb(0,255,0);
 	}
 }
-h1 {
-	margin: 0;
-	transition-duration: 0.2s;
+h2 {
+  display: inline-block;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
+  overflow-wrap: anywhere;
+  width: fit-content;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-	&:hover {
+  &:hover {
 		cursor: pointer;
 		filter: blur(0.4rem);
 		color: rgb(0,255,0);
 	}
 }
 h3 {
-	font-family: Werk;
-	font-size: large;
-	background-color: rgb(180,180,180);
-	color: rgb(0,255,0);
-	margin: 0;
-	width: fit-content;
-	display: block;
-	transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-	&:hover {
-		cursor: not-allowed;
-		filter: blur(0.4rem);
-		color: rgb(0,255,0);
-	}
+  display: inline;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
+  overflow-wrap: anywhere;
 }
 h4 {
-	font-family: Werk;
-	font-size: large;
-	font-weight: 700;
-	background-color: rgb(180,180,180);
-	color: rgb(0,255,0);
-	margin: 0;
-	margin-left: 50px;
-	display: inline-block;
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
-	&:hover {
+  display: block;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
+  overflow-wrap: anywhere;
+}
+a {
+  display: inline;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
+  font-style: italic;
+  overflow-wrap: anywhere;
+  color: rgb(0,255,0);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
 		cursor: pointer;
 		filter: blur(0.4rem);
 		color: rgb(0,255,0);
 	}
 }
-h5 {
-	font-family: Werk;
-	font-size: large;
-	background-color: rgb(180,180,180);
-	margin: 0;
-	margin-left: 10px;
-	display: inline-block;
-	transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-	&:hover {
-		cursor: pointer;
-		filter: blur(0.4rem);
-		color: rgb(0,255,0);
-	}
-}
-h6 {
-	font-family: Werk;
-	font-size: x-large;
-	background-color: rgb(180,180,180);
-	margin: 0;
-	display: inline-block;
-	transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-	&:hover {
-		cursor: pointer;
-		filter: blur(0.4rem);
-		color: rgb(0,255,0);
-	}
+p {
+  display: inline;
+  font-size: 12pt;
+  font-family: monospace;
+  margin: 0 0 0 0;
+  font-weight: normal;
+  line-height: 18pt;
 }
 @media (max-width: 600px) {
-	a {
-		font-size: medium;
-	}
-	h3 {
-		font-size: small;
-	}
-	h5 {
-		font-size: small;
-	}
-	h6 {
-		font-size: x-large;
-	}
 }

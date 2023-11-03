@@ -1,0 +1,203 @@
+[
+  [
+    ">>portfolio",
+    "niklaus.jpg",
+    "[niklaus iff]",
+    "*1996",
+    "admin@niklausiff.ch",
+    "instagram",
+    "github",
+    "archive",
+    "donate",
+    "zurigo"
+  ],
+  [
+    "2022-date bachelor bildende kunst fine arts at hslu lucerne",
+    "2020-2021 propädeutikum at zhdk zurich",
+    "2011-2014 it apprenticeship at 3atm neuhausen am rheinfall"
+  ],
+  [
+    "2023 cut the mustard at lullin + ferrari zurich",
+    "2023 les sons sous la tombe at kraftfeld winterthur",
+    "2023 all inclusive festival at hslu lucerne",
+    "2022 racing for serenity please be kind at unterführung wipkingerplatz zurich",
+    "2021 abschlussausstellung at toni areal zurich"
+  ],
+  [
+    "brute117",
+    "salomon xa pro 3d gtx",
+    "tngan",
+    "9144 meters well",
+    "safer_cyber",
+    "datasetter",
+    "index not found [wip]" 
+  ],
+  [
+    {
+      "txt": "a bruteforce attack is a hacking method that uses trial and error to crack passwords, login credentials, and encryption keys. here, an old android phone is subjected to a brute force attack that fails to find the right pin. its accumulated attempts are transformed into an infinite animation.",
+      "desc": [
+        "new media installation",
+        "175x300x85mm",
+        "Samsung Galaxy SM-A310, Raspberry Pi 4, concrete"
+      ],
+      "linksName":[
+        "text",
+        "video",
+        "code"
+      ],
+      "links":[
+        {
+          "if": "0",
+          "link": "mathew hansen"
+        },
+        {
+          "if": "1",
+          "link": "vimeo.com/853955043/ec4b178877"
+        },
+        {
+          "if": "1",
+          "link": "github.com/nikischwdrtr/brute"
+        }
+      ],
+      "year": "2023",
+      "images": [
+        "brute01.jpg",
+        "brute02.jpg",
+        "brute03.jpg",
+        "brute04.jpg"
+      ]
+    },
+    {
+      "txt": "",
+      "desc": [
+        "shoe in concrete",
+        "16x17x41cm each block"
+      ],
+      "linksName":[
+        ""
+      ],
+      "links":[
+        {
+          "if": "0",
+          "link": ""
+        }
+      ],
+      "year": "2023",
+      "images": [
+        "sal01.jpg",
+        "sal02.jpg",
+        "sal03.jpg"
+      ]
+    },
+    {
+      "txt": "",
+      "desc": [
+        "Nike TN Air Max Plus, matte photo prints, ipad",
+        "photo prints each 90x180cm",
+        "video 1162x720px"
+      ],
+      "linksName":[
+        "video"
+      ],
+      "links":[
+        {
+          "if": "1",
+          "link": "vimeo.com/666300916"
+        }
+      ],
+      "year": "2021",
+      "images": [
+        "tn01.jpg",
+        "tn02.jpg",
+        "tn03.jpg"
+      ]
+    },
+    {
+      "txt": "",
+      "desc": [
+        "new media installation",
+        "display, Monoblock, cable reel",
+        "video 1080x1920px"
+      ],
+      "linksName":[
+        "video"
+      ],
+      "links":[
+        {
+          "if": "1",
+          "link": "vimeo.com/772184630"
+        }
+      ],
+      "year": "2022",
+      "images": [
+        "meter01.jpg",
+        "meter02.jpg",
+        "meter03.jpg",
+        "meter04.jpg"
+      ]
+    },
+    {
+      "txt": "how to stay safe in the web and get what should be yours. this workshop aims to raise awareness about the devices we use on a daily basis. it’s about providing reference points rather than giving strict instructions on how to stay «safe». staying secure in the digital space is an individual responsibility, but understanding what’s happening is becoming increasingly important. this is not a lecture or a training session. bring your own questions and experiences with you, and let’s discuss them.",
+      "desc": [
+        "workshop"
+      ],
+      "linksName":[
+        ""
+      ],
+      "links":[
+        {
+          "if": "0",
+          "link": ""
+        }
+      ],
+      "year": "2022-date",
+      "images": [
+        "safercyber01.png"
+      ]
+    },
+    {
+      "txt": "python script designed for curating datasets by sorting through images efficiently. this tool is particularly useful for data preparation in machine learning and computer vision projects. with a simple and intuitive interface, it allows users to quickly organize their image datasets. key features include image sorting using right and left arrow keys and image cropping with the spacebar. tinder for your scraped images.",
+      "desc": [
+        "python script"
+      ],
+      "linksName":[
+        "code"
+      ],
+      "links":[
+        {
+          "if": "1",
+          "link": "github.com/nikischwdrtr/datasetter"
+        }
+      ],
+      "year": "2022",
+      "images": [
+        "datasetter01.png",
+        "datasetter02.png"
+      ]
+    },
+    {
+      "txt": "my personal exploration of home, error, and change involves using a self-written algorithm that compresses, alters, and partially distorts video files. i used self recorded footage of the rhine falls as the source material. after running the algorithm, i consistently encountered the error message «index not found». in the process of compression, all redundant information within a video is consolidated. however, by removing this information, the computer is put to the test as it must display the video without the deleted data. additionally, the video’s bitrate is significantly reduced, leaving the video with limited space to present its original content as intended. this challenges the computer to reorient and reprioritize, resulting in the creation of new compositions.",
+      "desc": [
+        "video algorithm"
+      ],
+      "linksName":[
+        "preview video",
+        "code"
+      ],
+      "links":[
+        {
+          "if": "1",
+          "link": "vimeo.com/666287068"
+        },
+        {
+          "if": "1",
+          "link": "github.com/nikischwdrtr/noindex"
+        }
+      ],
+      "year": "2021-date",
+      "images": [
+        "index01.jpg"
+      ]
+    }
+  ]
+]

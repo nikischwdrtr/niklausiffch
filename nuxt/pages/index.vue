@@ -1,20 +1,44 @@
 <template>
   <div class="index-container">
     <Menu />
-    <Images />
+    <h2 @click="setCV()">>>cv</h2>
+    <CV v-if="cv"/>
+    <Indx />
+    <Work v-if="workOn"/>
+    <div class="index-footer">
+      <h3>copyleft</h3>
+    </div>
   </div>
 </template>
 
 <script setup>
-  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
-  console.log('♕ niki is king ♕')
-  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
+  import {useCV} from '~/store/cv'
+  import {useWork} from '~/store/work'
+  import {storeToRefs} from 'pinia'
+  console.log('%c  ♕ niki is king ♕  ','background: #ffffff; color: #00FF00')
+  const { data } = await useAsyncData('data', () => queryContent('/data').findOne())
+  const dataArr = []
+  data.value.body.forEach((item, i) => {
+    dataArr.push(item)
+  })
+  const cvStore = useCV()
+  const {setCV} = cvStore
+  const {cv} = storeToRefs(cvStore)
+  const workStore = useWork()
+  const {workOn} = storeToRefs(workStore)
 </script>
 
 <style lang="scss">
 .index-container {
-  width: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 18pt;
+  width: 100%;
+}
+.index-footer {
+  position: fixed;
+  bottom: 0;
 }
 @media (max-width: 600px) {
 }
