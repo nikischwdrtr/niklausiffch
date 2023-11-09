@@ -64,11 +64,8 @@
   width: 100%;
   display: grid;
   grid-template: auto / 1fr;
-  gap: 18pt;
+  gap: 9pt;
 }
 @media (max-width: 600px) {
-  .Work-img-grid {
-    gap: 9pt;
-  }
 }
 </style>
