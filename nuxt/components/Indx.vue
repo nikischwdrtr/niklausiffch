@@ -28,7 +28,11 @@
   width: 100%;
   display: grid;
   grid-template: auto / 165px 1fr;
+  row-gap: 18pt;
 }
 @media (max-width: 600px) {
+  .Indx-container {
+    grid-template: auto / 1fr;
+  }
 }
 </style>

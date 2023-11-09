@@ -9,19 +9,44 @@
     "github",
     "archive",
     "donate",
-    "zurigo"
+    "zurigo",
+    "copyleft"
   ],
   [
-    "2022-date bachelor bildende kunst fine arts at hslu lucerne",
-    "2020-2021 propädeutikum at zhdk zurich",
-    "2011-2014 it apprenticeship at 3atm neuhausen am rheinfall"
+    [
+      "2023",
+      "cut the mustard at lullin + ferrari zurich"
+    ],
+    [
+      "2023",
+      "les sons sous la tombe at kraftfeld winterthur"
+    ],
+    [
+      "2023",
+      "all inclusive festival at hslu lucerne"
+    ],
+    [
+      "2022",
+      "racing for serenity please be kind at unterführung wipkingerplatz zurich"
+    ],
+    [
+      "2021",
+      "abschlussausstellung at toni areal zurich"
+    ]
   ],
   [
-    "2023 cut the mustard at lullin + ferrari zurich",
-    "2023 les sons sous la tombe at kraftfeld winterthur",
-    "2023 all inclusive festival at hslu lucerne",
-    "2022 racing for serenity please be kind at unterführung wipkingerplatz zurich",
-    "2021 abschlussausstellung at toni areal zurich"
+    [
+      "2022-date",
+      "bachelor bildende kunst fine arts at hslu lucerne"
+    ],
+    [
+      "2020-2021",
+      "propädeutikum at zhdk zurich"
+    ],
+    [
+      "2011-2014",
+      "it apprenticeship at 3atm neuhausen am rheinfall"
+    ]
   ],
   [
     "brute117",
@@ -68,19 +93,9 @@
       ]
     },
     {
-      "txt": "",
       "desc": [
         "shoe in concrete",
         "16x17x41cm each block"
-      ],
-      "linksName":[
-        ""
-      ],
-      "links":[
-        {
-          "if": "0",
-          "link": ""
-        }
       ],
       "year": "2023",
       "images": [
@@ -90,7 +105,6 @@
       ]
     },
     {
-      "txt": "",
       "desc": [
         "Nike TN Air Max Plus, matte photo prints, ipad",
         "photo prints each 90x180cm",
@@ -113,7 +127,6 @@
       ]
     },
     {
-      "txt": "",
       "desc": [
         "new media installation",
         "display, Monoblock, cable reel",
@@ -140,15 +153,6 @@
       "txt": "how to stay safe in the web and get what should be yours. this workshop aims to raise awareness about the devices we use on a daily basis. it’s about providing reference points rather than giving strict instructions on how to stay «safe». staying secure in the digital space is an individual responsibility, but understanding what’s happening is becoming increasingly important. this is not a lecture or a training session. bring your own questions and experiences with you, and let’s discuss them.",
       "desc": [
         "workshop"
-      ],
-      "linksName":[
-        ""
-      ],
-      "links":[
-        {
-          "if": "0",
-          "link": ""
-        }
       ],
       "year": "2022-date",
       "images": [

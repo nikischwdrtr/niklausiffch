@@ -51,6 +51,7 @@
   display: grid;
   grid-template: auto / 165px 1fr;
   width: 100%;
+  row-gap: 36pt;
   h1 {
     position: absolute;
     z-index: 2;
@@ -63,5 +64,8 @@
   }
 }
 @media (max-width: 600px) {
+  .Menu-container {
+    grid-template: auto / 1fr;
+  }
 }
 </style>

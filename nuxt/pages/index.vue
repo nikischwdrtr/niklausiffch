@@ -5,9 +5,6 @@
     <CV v-if="cv"/>
     <Indx />
     <Work v-if="workOn"/>
-    <div class="index-footer">
-      <h3>copyleft</h3>
-    </div>
   </div>
 </template>
 
@@ -35,10 +32,6 @@
   flex-direction: column;
   gap: 18pt;
   width: 100%;
-}
-.index-footer {
-  position: fixed;
-  bottom: 0;
 }
 @media (max-width: 600px) {
 }

@@ -1,6 +1,6 @@
 body{
 	overflow-x: hidden;
-  margin: 15px;
+  margin: 9pt;
 }
 h1 {
   display: inline;
@@ -78,6 +78,12 @@ p {
   margin: 0 0 0 0;
   font-weight: normal;
   line-height: 18pt;
+}
+img {
+  max-width: 100%;
+  max-height: 98vh;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 @media (max-width: 600px) {
 }

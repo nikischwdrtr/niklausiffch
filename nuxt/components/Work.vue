@@ -1,30 +1,24 @@
 <template>
   <div class="Work-container">
-    <h3>>{{dataArr[3][work]}}</h3>
-    <h3>{{dataArr[4][work].txt}}</h3>
-    <h3>&nbsp;</h3>
-    <h3>&nbsp;</h3>
-    <h3>&nbsp;</h3>
-    <template v-for="(txt,i) in dataArr[4][work].desc">
-      <h3>{{dataArr[4][work].desc[i]}}</h3>
-      <h3>&nbsp;</h3>
-    </template>
-    <h3>&nbsp;</h3>
-    <h3>&nbsp;</h3>
-    <template v-for="(txt,i) in dataArr[4][work].links">
-      <h3>
-        {{dataArr[4][work].linksName[i]}} >&nbsp;
-        <a v-if="dataArr[4][work].links[i].if==1" :href="'https://'+dataArr[4][work].links[i].link" target="_blank">{{dataArr[4][work].links[i].link}}</a>
-        <h3 v-if="dataArr[4][work].links[i].if==0">{{dataArr[4][work].links[i].link}}</h3>
-      </h3>
-      <h3>&nbsp;</h3>
-    </template>
-    <h3>&nbsp;</h3>
-    <h3>&nbsp;</h3>
+    <div class="Work-header">
+      <h3>>{{dataArr[3][work]}}</h3>
+    </div>
+    <h3 v-if="dataArr[4][work].txt">{{dataArr[4][work].txt}}</h3>
+    <div class="Work-desc">
+      <template v-for="(txt,i) in dataArr[4][work].desc">
+        <h3>{{dataArr[4][work].desc[i]}}</h3>
+      </template>
+    </div>
+    <div class="Work-links" v-if="dataArr[4][work].links">
+      <template v-for="(txt,i) in dataArr[4][work].links">
+        <h3>{{dataArr[4][work].linksName[i]}}</h3>
+        <h3>>&nbsp;
+          <a v-if="dataArr[4][work].links[i].if==1" :href="'https://'+dataArr[4][work].links[i].link" target="_blank">{{dataArr[4][work].links[i].link}}</a>
+          <h3 v-if="dataArr[4][work].links[i].if==0">{{dataArr[4][work].links[i].link}}</h3>
+        </h3>
+      </template>
+    </div>
     <h3>{{dataArr[4][work].year}}</h3>
-    <h3>&nbsp;</h3>
-    <h3>&nbsp;</h3>
-    <h3>&nbsp;</h3>
     <div class="Work-img-grid">
       <img v-for="(txt,i) in dataArr[4][work].images" :src="'/images/'+dataArr[4][work].images[i]">
     </div>
@@ -47,25 +41,34 @@
 <style lang="scss">
 .Work-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18pt;
+}
+.Work-header {
+  width: 100%;
   display: grid;
   grid-template: auto / 165px 1fr;
-  img {
-    width: 100%;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    &:hover {
-      cursor: crosshair;
-      filter: blur(0.4rem);
-      color: rgb(0,255,0);
-    }
-  }
+}
+.Work-desc {
+  width: 100%;
+  display: grid;
+  grid-template: auto / 1fr;
+}
+.Work-links {
+  width: 100%;
+  display: grid;
+  grid-template: auto / 165px 1fr;
 }
 .Work-img-grid {
   width: 100%;
   display: grid;
-  grid-template: auto / 70%;
-  gap: 15px;
+  grid-template: auto / 1fr;
+  gap: 18pt;
 }
 @media (max-width: 600px) {
+  .Work-img-grid {
+    gap: 9pt;
+  }
 }
 </style>
