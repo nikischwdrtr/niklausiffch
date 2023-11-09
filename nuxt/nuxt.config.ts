@@ -15,5 +15,4 @@ export default defineNuxtConfig({
     '~/assets/css/main.scss',
   ],
   ssr: false,
-  target: 'static'
 })
