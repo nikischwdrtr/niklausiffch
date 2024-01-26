@@ -14,6 +14,10 @@
   ],
   [
     [
+      "2024",
+      "aif24 at hslu lucerne"
+    ],
+    [
       "2023",
       "cut the mustard at lullin + ferrari zurich"
     ],
@@ -23,7 +27,7 @@
     ],
     [
       "2023",
-      "all inclusive festival at hslu lucerne"
+      "aif23 at hslu lucerne"
     ],
     [
       "2022",
@@ -49,6 +53,7 @@
     ]
   ],
   [
+    "transmitting control",
     "brute117",
     "salomon xa pro 3d gtx",
     "tngan",
@@ -59,22 +64,33 @@
   ],
   [
     {
-      "txt": "a bruteforce attack is a hacking method that uses trial and error to crack passwords, login credentials, and encryption keys. here, an old android phone is subjected to a brute force attack that fails to find the right pin. its accumulated attempts are transformed into an infinite animation.",
+      "txt": "",
+      "desc": [
+        "new media sculpture",
+        "120x24x31cm",
+        "concrete, network switch, ethernet cable"
+      ],
+      "linksName":[
+      ],
+      "links":[
+      ],
+      "year": "2024",
+      "images": [
+        "tc.jpg"
+      ]
+    },
+    {
+      "txt": "",
       "desc": [
         "new media installation",
-        "175x300x85mm",
+        "300x175x85mm",
         "Samsung Galaxy SM-A310, Raspberry Pi 4, concrete"
       ],
       "linksName":[
-        "text",
         "video",
         "code"
       ],
       "links":[
-        {
-          "if": "0",
-          "link": "mathew hansen"
-        },
         {
           "if": "1",
           "link": "vimeo.com/853955043/ec4b178877"
@@ -87,7 +103,6 @@
       "year": "2023",
       "images": [
         "brute01.jpg",
-        "brute02.jpg",
         "brute03.jpg",
         "brute04.jpg"
       ]
@@ -100,7 +115,6 @@
       "year": "2023",
       "images": [
         "sal01.jpg",
-        "sal02.jpg",
         "sal03.jpg"
       ]
     },
@@ -122,7 +136,6 @@
       "year": "2021",
       "images": [
         "tn01.jpg",
-        "tn02.jpg",
         "tn03.jpg"
       ]
     },
@@ -144,9 +157,8 @@
       "year": "2022",
       "images": [
         "meter01.jpg",
-        "meter02.jpg",
         "meter03.jpg",
-        "meter04.jpg"
+        "meter02.jpg"
       ]
     },
     {
