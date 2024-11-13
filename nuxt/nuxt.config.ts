@@ -1,18 +1,18 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    head: {
-      title: 'niklaus iff',
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
-      ],
-    },
-  },
+  compatibilityDate: '2024-04-03',
+  devtools: { enabled: true },
   modules: [
+    "@unocss/nuxt",
+    "@nuxtjs/seo",
     '@nuxt/content',
-    '@pinia/nuxt',
+    "@nuxt/eslint",
   ],
-  css: [
-    '~/assets/css/main.scss',
-  ],
-  ssr: true,
+  site: {
+    url: "https://niklausiff.ch",
+    name: `niklaus iff`,
+    description: `get well soon`,
+    defaultLocale: "en",
+  },
+  ssr: false,
 })
