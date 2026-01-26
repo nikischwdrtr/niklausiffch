@@ -22,9 +22,6 @@ function refresh() {
         <Statement class="max-sm:raw-drop raw-overlap" />
       </Dropdown>
       <a href="mailto:admin@niklausiff.ch">mail</a>
-      <a href="https://www.instagram.com/niklausiff/" target="_blank">
-        instagram
-      </a>
       <a href="https://soundcloud.com/jebemtimaiku" target="_blank">
         soundcloud
       </a>
