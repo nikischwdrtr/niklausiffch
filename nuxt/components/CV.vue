@@ -8,13 +8,6 @@
       </thead>
       <tbody>
         <tr>
-          <td>2026</td>
-          <td>
-            <em>Anfänge</em><br />
-            Anthracite, Zurich
-          </td>
-        </tr>
-        <tr>
           <td>2025</td>
           <td>
             <em>Nowhere Yet – Low Resolution Spaces</em><br />
